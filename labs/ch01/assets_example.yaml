@@ -1,0 +1,38 @@
+# Five assets from a fictional Irish payments company with US federal customers.
+# shelf_life_years = x (how long the data must stay secret)
+# migration_years  = y (your honest estimate of the migration time)
+assets:
+  - name: customer-api-tls
+    functions: [confidentiality, authentication]
+    shelf_life_years: 2
+    migration_years: 1.0
+    jurisdictions: [EU, US]
+    sectors: [finance, federal-contractor]
+
+  - name: archive-backups
+    functions: [confidentiality]
+    shelf_life_years: 15
+    migration_years: 3.0
+    jurisdictions: [EU]
+    sectors: [finance]
+
+  - name: payment-hsm-keywrap
+    functions: [confidentiality]
+    shelf_life_years: 7
+    migration_years: 4.0
+    jurisdictions: [EU]
+    sectors: [finance]
+
+  - name: firmware-signing-pos
+    functions: [signing]
+    shelf_life_years: 10
+    migration_years: 2.5
+    jurisdictions: [US]
+    sectors: [nss]
+
+  - name: internal-wiki-sso
+    functions: [authentication]
+    shelf_life_years: 0.5
+    migration_years: 0.5
+    jurisdictions: [EU]
+    sectors: [all]
