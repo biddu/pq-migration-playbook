@@ -1,0 +1,270 @@
+# The post-quantum regulatory calendar.
+# One entry per dated obligation. This is a living file: the printed book
+# (Appendix A) is a snapshot; the current version lives in the repository.
+#
+# Fields
+#   id            short stable identifier
+#   authority     who issued it
+#   instrument    the document
+#   jurisdiction  US | EU | UK | GLOBAL
+#   sectors       who it binds: nss (US National Security Systems), federal,
+#                 federal-contractor, critical-infrastructure, finance, all
+#   function      what it constrains:
+#                   confidentiality  (key establishment / encryption)
+#                   authentication   (signatures in protocols, certificates)
+#                   signing          (code and firmware signing)
+#                   inventory        (cryptographic inventory / CBOM)
+#                   plan             (migration plan or strategy)
+#   kind          procurement | deadline | deprecation | disallow
+#   date          ISO date the obligation bites
+#   summary       one line
+#   verified      date this entry was last checked against the primary source
+
+version: 2026-09-12
+
+instruments:
+
+  # ---------------- United States ----------------
+  - id: us-eo-2026-lead
+    authority: White House
+    instrument: Executive Orders of 22 June 2026
+    jurisdiction: US
+    sectors: [federal]
+    function: plan
+    kind: deadline
+    date: 2026-07-22
+    summary: Agencies name a post-quantum migration lead within 30 days
+    verified: 2026-09-12
+
+  - id: us-eo-2026-plans
+    authority: White House / OMB
+    instrument: Executive Orders of 22 June 2026
+    jurisdiction: US
+    sectors: [federal]
+    function: plan
+    kind: deadline
+    date: 2026-09-30
+    summary: OMB guidance issued; agencies review systems and submit migration plans
+    verified: 2026-09-12
+
+  - id: us-eo-2026-cbom
+    authority: CISA / NIST
+    instrument: Executive Orders of 22 June 2026
+    jurisdiction: US
+    sectors: [federal, federal-contractor]
+    function: inventory
+    kind: deadline
+    date: 2027-03-19
+    summary: Cryptographic bill of materials guidance due within 270 days
+    verified: 2026-09-12
+
+  - id: us-eo-2026-hva-ke
+    authority: White House
+    instrument: Executive Orders of 22 June 2026
+    jurisdiction: US
+    sectors: [federal]
+    function: confidentiality
+    kind: deadline
+    date: 2030-12-31
+    summary: High Value Assets and high-impact systems on post-quantum key establishment
+    verified: 2026-09-12
+
+  - id: us-eo-2026-contractors
+    authority: White House
+    instrument: Executive Orders of 22 June 2026
+    jurisdiction: US
+    sectors: [federal-contractor]
+    function: confidentiality
+    kind: deadline
+    date: 2030-12-31
+    summary: Covered contractors comply with NIST FIPS incorporating PQC algorithms
+    verified: 2026-09-12
+
+  - id: us-eo-2026-hva-sig
+    authority: White House
+    instrument: Executive Orders of 22 June 2026
+    jurisdiction: US
+    sectors: [federal]
+    function: authentication
+    kind: deadline
+    date: 2031-12-31
+    summary: High Value Assets and high-impact systems on post-quantum signatures
+    verified: 2026-09-12
+
+  - id: cnsa2-procurement
+    authority: NSA
+    instrument: CNSA 2.0 / CNSSP 15
+    jurisdiction: US
+    sectors: [nss]
+    function: signing
+    kind: procurement
+    date: 2027-01-01
+    summary: New acquisitions for National Security Systems must be CNSA 2.0 compliant; software and firmware signing is the first category NSA lists
+    verified: 2026-09-12
+
+  - id: cnsa2-signing-exclusive
+    authority: NSA
+    instrument: CNSA 2.0
+    jurisdiction: US
+    sectors: [nss]
+    function: signing
+    kind: deadline
+    date: 2030-12-31
+    summary: Software and firmware signing uses CNSA 2.0 algorithms exclusively
+    verified: 2026-09-12
+
+  - id: cnsa2-networking
+    authority: NSA
+    instrument: CNSA 2.0
+    jurisdiction: US
+    sectors: [nss]
+    function: confidentiality
+    kind: deadline
+    date: 2030-12-31
+    summary: Traditional networking equipment (VPNs, routers) exclusively CNSA 2.0
+    verified: 2026-09-12
+
+  - id: cnsa2-browsers-cloud
+    authority: NSA
+    instrument: CNSA 2.0
+    jurisdiction: US
+    sectors: [nss]
+    function: confidentiality
+    kind: deadline
+    date: 2033-12-31
+    summary: Web browsers, servers, cloud services and operating systems exclusively CNSA 2.0
+    verified: 2026-09-12
+
+  - id: cnsa2-mandatory
+    authority: NSA
+    instrument: CNSA 2.0
+    jurisdiction: US
+    sectors: [nss]
+    function: authentication
+    kind: deadline
+    date: 2031-12-31
+    summary: CNSA 2.0 algorithms mandatory across covered categories
+    verified: 2026-09-12
+
+  - id: cnsa2-complete
+    authority: NSA
+    instrument: CNSA 2.0
+    jurisdiction: US
+    sectors: [nss]
+    function: confidentiality
+    kind: disallow
+    date: 2035-12-31
+    summary: All National Security Systems quantum-resistant
+    verified: 2026-09-12
+
+  - id: nist-ir8547-deprecate
+    authority: NIST
+    instrument: NIST IR 8547
+    jurisdiction: GLOBAL
+    sectors: [all]
+    function: confidentiality
+    kind: deprecation
+    date: 2030-12-31
+    summary: RSA-2048, ECDH/ECDSA P-256 and other 112-bit-security algorithms deprecated after 2030
+    verified: 2026-09-12
+
+  - id: nist-ir8547-disallow
+    authority: NIST
+    instrument: NIST IR 8547
+    jurisdiction: GLOBAL
+    sectors: [all]
+    function: confidentiality
+    kind: disallow
+    date: 2035-12-31
+    summary: All quantum-vulnerable public-key algorithms disallowed after 2035
+    verified: 2026-09-12
+
+  # ---------------- European Union ----------------
+  - id: eu-roadmap-strategy
+    authority: European Commission / NIS Cooperation Group
+    instrument: Coordinated Implementation Roadmap (June 2025)
+    jurisdiction: EU
+    sectors: [all]
+    function: plan
+    kind: deadline
+    date: 2026-12-31
+    summary: Member states start national PQC strategies, risk assessments and cryptographic inventories
+    verified: 2026-09-12
+
+  - id: eu-roadmap-inventory
+    authority: European Commission / NIS Cooperation Group
+    instrument: Coordinated Implementation Roadmap (June 2025)
+    jurisdiction: EU
+    sectors: [critical-infrastructure, finance]
+    function: inventory
+    kind: deadline
+    date: 2026-12-31
+    summary: Cryptographic inventories as the first step of migration
+    verified: 2026-09-12
+
+  - id: eu-roadmap-highrisk
+    authority: European Commission / NIS Cooperation Group
+    instrument: Coordinated Implementation Roadmap (June 2025)
+    jurisdiction: EU
+    sectors: [critical-infrastructure, finance]
+    function: confidentiality
+    kind: deadline
+    date: 2030-12-31
+    summary: High-risk use cases and critical infrastructure on PQC no later than 2030
+    verified: 2026-09-12
+
+  - id: eu-roadmap-complete
+    authority: European Commission / NIS Cooperation Group
+    instrument: Coordinated Implementation Roadmap (June 2025)
+    jurisdiction: EU
+    sectors: [all]
+    function: confidentiality
+    kind: deadline
+    date: 2035-12-31
+    summary: Transition complete for as many systems as practically feasible
+    verified: 2026-09-12
+
+  - id: eu-dora-rts
+    authority: European Commission
+    instrument: Delegated Regulation (EU) 2024/1774 (DORA ICT risk RTS)
+    jurisdiction: EU
+    sectors: [finance]
+    function: plan
+    kind: deadline
+    date: 2025-01-17
+    summary: Financial entities address cryptographic threats including quantum advancements, and provide for changing cryptography as cryptanalysis develops
+    verified: 2026-09-12
+
+  # ---------------- United Kingdom ----------------
+  - id: uk-ncsc-plan
+    authority: NCSC
+    instrument: Timelines for migration to PQC (March 2025)
+    jurisdiction: UK
+    sectors: [all]
+    function: plan
+    kind: deadline
+    date: 2028-12-31
+    summary: Identify cryptographic services needing upgrade and build a migration plan
+    verified: 2026-09-12
+
+  - id: uk-ncsc-priority
+    authority: NCSC
+    instrument: Timelines for migration to PQC (March 2025)
+    jurisdiction: UK
+    sectors: [all]
+    function: confidentiality
+    kind: deadline
+    date: 2031-12-31
+    summary: High-priority upgrades executed
+    verified: 2026-09-12
+
+  - id: uk-ncsc-complete
+    authority: NCSC
+    instrument: Timelines for migration to PQC (March 2025)
+    jurisdiction: UK
+    sectors: [all]
+    function: confidentiality
+    kind: deadline
+    date: 2035-12-31
+    summary: Migration complete for all systems, services and products
+    verified: 2026-09-12
