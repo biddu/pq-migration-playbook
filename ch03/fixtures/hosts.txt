@@ -1,4 +1,0 @@
-# hosts scanned in Lab 3.2
-edge.payments.example:443
-api.payments.example:443
-legacy.payments.example:8443
