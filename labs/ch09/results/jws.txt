@@ -1,0 +1,13 @@
+ES256      token   677 B  (sig   64 raw /   86 b64)  JWK   145 B  sign  0.070 ms  verify  0.159 ms  cookie yes
+EdDSA      token   677 B  (sig   64 raw /   86 b64)  JWK    98 B  sign  0.055 ms  verify  0.151 ms  cookie yes
+ML-DSA-44  token  3823 B  (sig 2420 raw / 3227 b64)  JWK  1809 B  sign  0.589 ms  verify  0.179 ms  cookie yes
+ML-DSA-65  token  5008 B  (sig 3309 raw / 4412 b64)  JWK  2662 B  sign  0.961 ms  verify  0.246 ms  cookie NO 
+ML-DSA-87  token  6766 B  (sig 4627 raw / 6170 b64)  JWK  3515 B  sign  1.208 ms  verify  0.395 ms  cookie NO 
+ML-DSA-65+x5c token 25043 B with a two-certificate ML-DSA-65 chain in the header
+
+budget                                 ES256           EdDSA       ML-DSA-44       ML-DSA-65       ML-DSA-87  ML-DSA-65 + x5
+cookie (RFC 6265 min)   4096 B            fits            fits            fits              NO              NO              NO
+nginx header line       8192 B            fits            fits            fits            fits            fits              NO
+Apache header line      8190 B            fits            fits            fits            fits            fits              NO
+ALB/CloudFront headers 16384 B            fits            fits            fits            fits            fits              NO
+Node.js all headers    16384 B            fits            fits            fits            fits            fits              NO

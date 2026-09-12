@@ -1,0 +1,304 @@
+[
+  {
+    "profile": "ecdsa",
+    "mutual": false,
+    "verified": true,
+    "server_flight_bytes": 2473,
+    "server_flight_segments": 2,
+    "fits_initcwnd": true,
+    "bytes_c2s": 1497,
+    "bytes_s2c": 3007,
+    "brief": [
+      "Connecting to 127.0.0.1",
+      "Can't use SSL_get_servername",
+      "CONNECTION ESTABLISHED",
+      "Protocol version: TLSv1.3",
+      "Ciphersuite: TLS_AES_256_GCM_SHA384",
+      "Peer certificate: CN=api.example.test",
+      "Hash used: SHA256",
+      "Signature type: ecdsa_secp256r1_sha256"
+    ]
+  },
+  {
+    "profile": "ecdsa",
+    "mutual": true,
+    "verified": true,
+    "server_flight_bytes": 2606,
+    "server_flight_segments": 2,
+    "fits_initcwnd": true,
+    "bytes_c2s": 2595,
+    "bytes_s2c": 4132,
+    "brief": [
+      "Connecting to 127.0.0.1",
+      "Can't use SSL_get_servername",
+      "CONNECTION ESTABLISHED",
+      "Protocol version: TLSv1.3",
+      "Ciphersuite: TLS_AES_256_GCM_SHA384",
+      "Requested Signature Algorithms: id-ml-dsa-65:id-ml-dsa-87:id-ml-dsa-44:ECDSA+SHA256:ECDSA+SHA384:ECDSA+SHA512:ed25519:ed448:ecdsa_brainpoolP256r1_sha256:ecdsa_brainpoolP384r1_sha384:ecdsa_brainpoolP512r1_sha512:rsa_pss_pss_sha256:rsa_pss_pss_sha384:rsa_pss_pss_sha512:RSA-PSS+SHA256:RSA-PSS+SHA384:RSA-PSS+SHA512:RSA+SHA256:RSA+SHA384:RSA+SHA512",
+      "Peer certificate: CN=api.example.test",
+      "Hash used: SHA256"
+    ]
+  },
+  {
+    "profile": "mldsa44",
+    "mutual": false,
+    "verified": true,
+    "server_flight_bytes": 12014,
+    "server_flight_segments": 9,
+    "fits_initcwnd": true,
+    "bytes_c2s": 1497,
+    "bytes_s2c": 12548,
+    "brief": [
+      "Connecting to 127.0.0.1",
+      "Can't use SSL_get_servername",
+      "CONNECTION ESTABLISHED",
+      "Protocol version: TLSv1.3",
+      "Ciphersuite: TLS_AES_256_GCM_SHA384",
+      "Peer certificate: CN=api.example.test",
+      "Hash used: UNDEF",
+      "Signature type: mldsa44"
+    ]
+  },
+  {
+    "profile": "mldsa44",
+    "mutual": true,
+    "verified": true,
+    "server_flight_bytes": 12148,
+    "server_flight_segments": 9,
+    "fits_initcwnd": true,
+    "bytes_c2s": 12138,
+    "bytes_s2c": 20874,
+    "brief": [
+      "Connecting to 127.0.0.1",
+      "Can't use SSL_get_servername",
+      "CONNECTION ESTABLISHED",
+      "Protocol version: TLSv1.3",
+      "Ciphersuite: TLS_AES_256_GCM_SHA384",
+      "Requested Signature Algorithms: id-ml-dsa-65:id-ml-dsa-87:id-ml-dsa-44:ECDSA+SHA256:ECDSA+SHA384:ECDSA+SHA512:ed25519:ed448:ecdsa_brainpoolP256r1_sha256:ecdsa_brainpoolP384r1_sha384:ecdsa_brainpoolP512r1_sha512:rsa_pss_pss_sha256:rsa_pss_pss_sha384:rsa_pss_pss_sha512:RSA-PSS+SHA256:RSA-PSS+SHA384:RSA-PSS+SHA512:RSA+SHA256:RSA+SHA384:RSA+SHA512",
+      "Peer certificate: CN=api.example.test",
+      "Hash used: UNDEF"
+    ]
+  },
+  {
+    "profile": "mldsa65",
+    "mutual": false,
+    "verified": true,
+    "server_flight_bytes": 15961,
+    "server_flight_segments": 11,
+    "fits_initcwnd": false,
+    "bytes_c2s": 1497,
+    "bytes_s2c": 16495,
+    "brief": [
+      "Connecting to 127.0.0.1",
+      "Can't use SSL_get_servername",
+      "CONNECTION ESTABLISHED",
+      "Protocol version: TLSv1.3",
+      "Ciphersuite: TLS_AES_256_GCM_SHA384",
+      "Peer certificate: CN=api.example.test",
+      "Hash used: UNDEF",
+      "Signature type: mldsa65"
+    ]
+  },
+  {
+    "profile": "mldsa65",
+    "mutual": true,
+    "verified": true,
+    "server_flight_bytes": 16095,
+    "server_flight_segments": 12,
+    "fits_initcwnd": false,
+    "bytes_c2s": 16085,
+    "bytes_s2c": 27861,
+    "brief": [
+      "Connecting to 127.0.0.1",
+      "Can't use SSL_get_servername",
+      "CONNECTION ESTABLISHED",
+      "Protocol version: TLSv1.3",
+      "Ciphersuite: TLS_AES_256_GCM_SHA384",
+      "Requested Signature Algorithms: id-ml-dsa-65:id-ml-dsa-87:id-ml-dsa-44:ECDSA+SHA256:ECDSA+SHA384:ECDSA+SHA512:ed25519:ed448:ecdsa_brainpoolP256r1_sha256:ecdsa_brainpoolP384r1_sha384:ecdsa_brainpoolP512r1_sha512:rsa_pss_pss_sha256:rsa_pss_pss_sha384:rsa_pss_pss_sha512:RSA-PSS+SHA256:RSA-PSS+SHA384:RSA-PSS+SHA512:RSA+SHA256:RSA+SHA384:RSA+SHA512",
+      "Peer certificate: CN=api.example.test",
+      "Hash used: UNDEF"
+    ]
+  },
+  {
+    "profile": "mldsa87",
+    "mutual": false,
+    "verified": true,
+    "server_flight_bytes": 21195,
+    "server_flight_segments": 15,
+    "fits_initcwnd": false,
+    "bytes_c2s": 1497,
+    "bytes_s2c": 21729,
+    "brief": [
+      "Connecting to 127.0.0.1",
+      "Can't use SSL_get_servername",
+      "CONNECTION ESTABLISHED",
+      "Protocol version: TLSv1.3",
+      "Ciphersuite: TLS_AES_256_GCM_SHA384",
+      "Peer certificate: CN=api.example.test",
+      "Hash used: UNDEF",
+      "Signature type: mldsa87"
+    ]
+  },
+  {
+    "profile": "mldsa87",
+    "mutual": true,
+    "verified": true,
+    "server_flight_bytes": 21329,
+    "server_flight_segments": 15,
+    "fits_initcwnd": false,
+    "bytes_c2s": 21319,
+    "bytes_s2c": 37031,
+    "brief": [
+      "Connecting to 127.0.0.1",
+      "Can't use SSL_get_servername",
+      "CONNECTION ESTABLISHED",
+      "Protocol version: TLSv1.3",
+      "Ciphersuite: TLS_AES_256_GCM_SHA384",
+      "Requested Signature Algorithms: id-ml-dsa-65:id-ml-dsa-87:id-ml-dsa-44:ECDSA+SHA256:ECDSA+SHA384:ECDSA+SHA512:ed25519:ed448:ecdsa_brainpoolP256r1_sha256:ecdsa_brainpoolP384r1_sha384:ecdsa_brainpoolP512r1_sha512:rsa_pss_pss_sha256:rsa_pss_pss_sha384:rsa_pss_pss_sha512:RSA-PSS+SHA256:RSA-PSS+SHA384:RSA-PSS+SHA512:RSA+SHA256:RSA+SHA384:RSA+SHA512",
+      "Peer certificate: CN=api.example.test",
+      "Hash used: UNDEF"
+    ]
+  },
+  {
+    "profile": "pq-under-classical",
+    "mutual": false,
+    "verified": true,
+    "server_flight_bytes": 12720,
+    "server_flight_segments": 9,
+    "fits_initcwnd": true,
+    "bytes_c2s": 1497,
+    "bytes_s2c": 13254,
+    "brief": [
+      "Connecting to 127.0.0.1",
+      "Can't use SSL_get_servername",
+      "CONNECTION ESTABLISHED",
+      "Protocol version: TLSv1.3",
+      "Ciphersuite: TLS_AES_256_GCM_SHA384",
+      "Peer certificate: CN=api.example.test",
+      "Hash used: UNDEF",
+      "Signature type: mldsa65"
+    ]
+  },
+  {
+    "profile": "pq-under-classical",
+    "mutual": true,
+    "verified": true,
+    "server_flight_bytes": 12854,
+    "server_flight_segments": 9,
+    "fits_initcwnd": true,
+    "bytes_c2s": 12844,
+    "bytes_s2c": 24620,
+    "brief": [
+      "Connecting to 127.0.0.1",
+      "Can't use SSL_get_servername",
+      "CONNECTION ESTABLISHED",
+      "Protocol version: TLSv1.3",
+      "Ciphersuite: TLS_AES_256_GCM_SHA384",
+      "Requested Signature Algorithms: id-ml-dsa-65:id-ml-dsa-87:id-ml-dsa-44:ECDSA+SHA256:ECDSA+SHA384:ECDSA+SHA512:ed25519:ed448:ecdsa_brainpoolP256r1_sha256:ecdsa_brainpoolP384r1_sha384:ecdsa_brainpoolP512r1_sha512:rsa_pss_pss_sha256:rsa_pss_pss_sha384:rsa_pss_pss_sha512:RSA-PSS+SHA256:RSA-PSS+SHA384:RSA-PSS+SHA512:RSA+SHA256:RSA+SHA384:RSA+SHA512",
+      "Peer certificate: CN=api.example.test",
+      "Hash used: UNDEF"
+    ]
+  },
+  {
+    "profile": "pq-ca-classical-leaf",
+    "mutual": false,
+    "verified": true,
+    "server_flight_bytes": 10841,
+    "server_flight_segments": 8,
+    "fits_initcwnd": true,
+    "bytes_c2s": 1497,
+    "bytes_s2c": 11375,
+    "brief": [
+      "Connecting to 127.0.0.1",
+      "Can't use SSL_get_servername",
+      "CONNECTION ESTABLISHED",
+      "Protocol version: TLSv1.3",
+      "Ciphersuite: TLS_AES_256_GCM_SHA384",
+      "Peer certificate: CN=api.example.test",
+      "Hash used: SHA256",
+      "Signature type: ecdsa_secp256r1_sha256"
+    ]
+  },
+  {
+    "profile": "pq-ca-classical-leaf",
+    "mutual": true,
+    "verified": true,
+    "server_flight_bytes": 10974,
+    "server_flight_segments": 8,
+    "fits_initcwnd": true,
+    "bytes_c2s": 10965,
+    "bytes_s2c": 18996,
+    "brief": [
+      "Connecting to 127.0.0.1",
+      "Can't use SSL_get_servername",
+      "CONNECTION ESTABLISHED",
+      "Protocol version: TLSv1.3",
+      "Ciphersuite: TLS_AES_256_GCM_SHA384",
+      "Requested Signature Algorithms: id-ml-dsa-65:id-ml-dsa-87:id-ml-dsa-44:ECDSA+SHA256:ECDSA+SHA384:ECDSA+SHA512:ed25519:ed448:ecdsa_brainpoolP256r1_sha256:ecdsa_brainpoolP384r1_sha384:ecdsa_brainpoolP512r1_sha512:rsa_pss_pss_sha256:rsa_pss_pss_sha384:rsa_pss_pss_sha512:RSA-PSS+SHA256:RSA-PSS+SHA384:RSA-PSS+SHA512:RSA+SHA256:RSA+SHA384:RSA+SHA512",
+      "Peer certificate: CN=api.example.test",
+      "Hash used: SHA256"
+    ]
+  },
+  {
+    "profile": "slh-root",
+    "mutual": false,
+    "verified": true,
+    "server_flight_bytes": 20508,
+    "server_flight_segments": 15,
+    "fits_initcwnd": false,
+    "bytes_c2s": 1497,
+    "bytes_s2c": 21042,
+    "brief": [
+      "Connecting to 127.0.0.1",
+      "Can't use SSL_get_servername",
+      "CONNECTION ESTABLISHED",
+      "Protocol version: TLSv1.3",
+      "Ciphersuite: TLS_AES_256_GCM_SHA384",
+      "Peer certificate: CN=api.example.test",
+      "Hash used: UNDEF",
+      "Signature type: mldsa65"
+    ]
+  },
+  {
+    "profile": "slh-root",
+    "mutual": true,
+    "verified": true,
+    "server_flight_bytes": 20642,
+    "server_flight_segments": 15,
+    "fits_initcwnd": false,
+    "bytes_c2s": 20632,
+    "bytes_s2c": 32408,
+    "brief": [
+      "Connecting to 127.0.0.1",
+      "Can't use SSL_get_servername",
+      "CONNECTION ESTABLISHED",
+      "Protocol version: TLSv1.3",
+      "Ciphersuite: TLS_AES_256_GCM_SHA384",
+      "Requested Signature Algorithms: id-ml-dsa-65:id-ml-dsa-87:id-ml-dsa-44:ECDSA+SHA256:ECDSA+SHA384:ECDSA+SHA512:ed25519:ed448:ecdsa_brainpoolP256r1_sha256:ecdsa_brainpoolP384r1_sha384:ecdsa_brainpoolP512r1_sha512:rsa_pss_pss_sha256:rsa_pss_pss_sha384:rsa_pss_pss_sha512:RSA-PSS+SHA256:RSA-PSS+SHA384:RSA-PSS+SHA512:RSA+SHA256:RSA+SHA384:RSA+SHA512",
+      "Peer certificate: CN=api.example.test",
+      "Hash used: UNDEF"
+    ]
+  },
+  {
+    "profile": "composite MLDSA65-ECDSA-P256-SHA512 (computed)",
+    "mutual": false,
+    "verified": null,
+    "server_flight_bytes": 16307,
+    "server_flight_segments": 12,
+    "fits_initcwnd": false,
+    "bytes_c2s": null,
+    "bytes_s2c": null,
+    "brief": []
+  },
+  {
+    "profile": "composite MLDSA44-ECDSA-P256-SHA256 (computed)",
+    "mutual": false,
+    "verified": null,
+    "server_flight_bytes": 12360,
+    "server_flight_segments": 9,
+    "fits_initcwnd": true,
+    "bytes_c2s": null,
+    "bytes_s2c": null,
+    "brief": []
+  }
+]

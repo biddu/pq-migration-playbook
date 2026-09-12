@@ -1,0 +1,789 @@
+[
+  {
+    "scenario": "default",
+    "server_kex": "(default)",
+    "client_kex": "(default)",
+    "exit": 0,
+    "client": {
+      "ident": "SSH-2.0-OpenSSH_10.1",
+      "kex": [
+        "mlkem768x25519-sha256",
+        "sntrup761x25519-sha512",
+        "sntrup761x25519-sha512@openssh.com",
+        "curve25519-sha256",
+        "curve25519-sha256@libssh.org",
+        "ecdh-sha2-nistp256",
+        "ecdh-sha2-nistp384",
+        "ecdh-sha2-nistp521",
+        "diffie-hellman-group-exchange-sha256",
+        "diffie-hellman-group16-sha512",
+        "diffie-hellman-group18-sha512",
+        "diffie-hellman-group14-sha256",
+        "ext-info-c",
+        "kex-strict-c-v00@openssh.com"
+      ],
+      "hostkey_algs": [
+        "ssh-ed25519-cert-v01@openssh.com",
+        "ecdsa-sha2-nistp256-cert-v01@openssh.com",
+        "ecdsa-sha2-nistp384-cert-v01@openssh.com",
+        "ecdsa-sha2-nistp521-cert-v01@openssh.com",
+        "sk-ssh-ed25519-cert-v01@openssh.com",
+        "sk-ecdsa-sha2-nistp256-cert-v01@openssh.com",
+        "rsa-sha2-512-cert-v01@openssh.com",
+        "rsa-sha2-256-cert-v01@openssh.com",
+        "ssh-ed25519",
+        "ecdsa-sha2-nistp256",
+        "ecdsa-sha2-nistp384",
+        "ecdsa-sha2-nistp521",
+        "sk-ssh-ed25519@openssh.com",
+        "sk-ecdsa-sha2-nistp256@openssh.com",
+        "rsa-sha2-512",
+        "rsa-sha2-256"
+      ],
+      "ciphers": [
+        "chacha20-poly1305@openssh.com",
+        "aes128-gcm@openssh.com",
+        "aes256-gcm@openssh.com",
+        "aes128-ctr",
+        "aes192-ctr",
+        "aes256-ctr"
+      ],
+      "macs": [
+        "umac-64-etm@openssh.com",
+        "umac-128-etm@openssh.com",
+        "hmac-sha2-256-etm@openssh.com",
+        "hmac-sha2-512-etm@openssh.com",
+        "hmac-sha1-etm@openssh.com",
+        "umac-64@openssh.com",
+        "umac-128@openssh.com",
+        "hmac-sha2-256",
+        "hmac-sha2-512",
+        "hmac-sha1"
+      ],
+      "bytes_to_newkeys": 2816,
+      "packets": [
+        [
+          "KEXINIT",
+          1559
+        ],
+        [
+          "KEX_ECDH_INIT",
+          1221
+        ],
+        [
+          "NEWKEYS",
+          1
+        ]
+      ]
+    },
+    "server": {
+      "ident": "SSH-2.0-OpenSSH_10.1",
+      "kex": [
+        "mlkem768x25519-sha256",
+        "sntrup761x25519-sha512",
+        "sntrup761x25519-sha512@openssh.com",
+        "curve25519-sha256",
+        "curve25519-sha256@libssh.org",
+        "ecdh-sha2-nistp256",
+        "ecdh-sha2-nistp384",
+        "ecdh-sha2-nistp521",
+        "ext-info-s",
+        "kex-strict-s-v00@openssh.com"
+      ],
+      "hostkey_algs": [
+        "ssh-ed25519",
+        "rsa-sha2-512",
+        "rsa-sha2-256"
+      ],
+      "ciphers": [
+        "chacha20-poly1305@openssh.com",
+        "aes128-gcm@openssh.com",
+        "aes256-gcm@openssh.com",
+        "aes128-ctr",
+        "aes192-ctr",
+        "aes256-ctr"
+      ],
+      "macs": [
+        "umac-64-etm@openssh.com",
+        "umac-128-etm@openssh.com",
+        "hmac-sha2-256-etm@openssh.com",
+        "hmac-sha2-512-etm@openssh.com",
+        "hmac-sha1-etm@openssh.com",
+        "umac-64@openssh.com",
+        "umac-128@openssh.com",
+        "hmac-sha2-256",
+        "hmac-sha2-512",
+        "hmac-sha1"
+      ],
+      "bytes_to_newkeys": 2312,
+      "packets": [
+        [
+          "KEXINIT",
+          1006
+        ],
+        [
+          "KEX_ECDH_REPLY",
+          1267
+        ],
+        [
+          "NEWKEYS",
+          1
+        ]
+      ]
+    },
+    "negotiated_kex": "mlkem768x25519-sha256",
+    "negotiated_hostkey": "ssh-ed25519",
+    "quantum_level": 3,
+    "client_ephemeral_bytes": 1216,
+    "server_ephemeral_bytes": 1120,
+    "host_key_bytes": 51,
+    "signature_alg": "ssh-ed25519",
+    "signature_bytes": 83,
+    "strict_kex": true
+  },
+  {
+    "scenario": "pq-only-server",
+    "server_kex": "mlkem768x25519-sha256",
+    "client_kex": "(default)",
+    "exit": 0,
+    "client": {
+      "ident": "SSH-2.0-OpenSSH_10.1",
+      "kex": [
+        "mlkem768x25519-sha256",
+        "sntrup761x25519-sha512",
+        "sntrup761x25519-sha512@openssh.com",
+        "curve25519-sha256",
+        "curve25519-sha256@libssh.org",
+        "ecdh-sha2-nistp256",
+        "ecdh-sha2-nistp384",
+        "ecdh-sha2-nistp521",
+        "diffie-hellman-group-exchange-sha256",
+        "diffie-hellman-group16-sha512",
+        "diffie-hellman-group18-sha512",
+        "diffie-hellman-group14-sha256",
+        "ext-info-c",
+        "kex-strict-c-v00@openssh.com"
+      ],
+      "hostkey_algs": [
+        "ssh-ed25519-cert-v01@openssh.com",
+        "ecdsa-sha2-nistp256-cert-v01@openssh.com",
+        "ecdsa-sha2-nistp384-cert-v01@openssh.com",
+        "ecdsa-sha2-nistp521-cert-v01@openssh.com",
+        "sk-ssh-ed25519-cert-v01@openssh.com",
+        "sk-ecdsa-sha2-nistp256-cert-v01@openssh.com",
+        "rsa-sha2-512-cert-v01@openssh.com",
+        "rsa-sha2-256-cert-v01@openssh.com",
+        "ssh-ed25519",
+        "ecdsa-sha2-nistp256",
+        "ecdsa-sha2-nistp384",
+        "ecdsa-sha2-nistp521",
+        "sk-ssh-ed25519@openssh.com",
+        "sk-ecdsa-sha2-nistp256@openssh.com",
+        "rsa-sha2-512",
+        "rsa-sha2-256"
+      ],
+      "ciphers": [
+        "chacha20-poly1305@openssh.com",
+        "aes128-gcm@openssh.com",
+        "aes256-gcm@openssh.com",
+        "aes128-ctr",
+        "aes192-ctr",
+        "aes256-ctr"
+      ],
+      "macs": [
+        "umac-64-etm@openssh.com",
+        "umac-128-etm@openssh.com",
+        "hmac-sha2-256-etm@openssh.com",
+        "hmac-sha2-512-etm@openssh.com",
+        "hmac-sha1-etm@openssh.com",
+        "umac-64@openssh.com",
+        "umac-128@openssh.com",
+        "hmac-sha2-256",
+        "hmac-sha2-512",
+        "hmac-sha1"
+      ],
+      "bytes_to_newkeys": 2816,
+      "packets": [
+        [
+          "KEXINIT",
+          1559
+        ],
+        [
+          "KEX_ECDH_INIT",
+          1221
+        ],
+        [
+          "NEWKEYS",
+          1
+        ]
+      ]
+    },
+    "server": {
+      "ident": "SSH-2.0-OpenSSH_10.1",
+      "kex": [
+        "mlkem768x25519-sha256",
+        "ext-info-s",
+        "kex-strict-s-v00@openssh.com"
+      ],
+      "hostkey_algs": [
+        "ssh-ed25519",
+        "rsa-sha2-512",
+        "rsa-sha2-256"
+      ],
+      "ciphers": [
+        "chacha20-poly1305@openssh.com",
+        "aes128-gcm@openssh.com",
+        "aes256-gcm@openssh.com",
+        "aes128-ctr",
+        "aes192-ctr",
+        "aes256-ctr"
+      ],
+      "macs": [
+        "umac-64-etm@openssh.com",
+        "umac-128-etm@openssh.com",
+        "hmac-sha2-256-etm@openssh.com",
+        "hmac-sha2-512-etm@openssh.com",
+        "hmac-sha1-etm@openssh.com",
+        "umac-64@openssh.com",
+        "umac-128@openssh.com",
+        "hmac-sha2-256",
+        "hmac-sha2-512",
+        "hmac-sha1"
+      ],
+      "bytes_to_newkeys": 2152,
+      "packets": [
+        [
+          "KEXINIT",
+          844
+        ],
+        [
+          "KEX_ECDH_REPLY",
+          1267
+        ],
+        [
+          "NEWKEYS",
+          1
+        ]
+      ]
+    },
+    "negotiated_kex": "mlkem768x25519-sha256",
+    "negotiated_hostkey": "ssh-ed25519",
+    "quantum_level": 3,
+    "client_ephemeral_bytes": 1216,
+    "server_ephemeral_bytes": 1120,
+    "host_key_bytes": 51,
+    "signature_alg": "ssh-ed25519",
+    "signature_bytes": 83,
+    "strict_kex": true
+  },
+  {
+    "scenario": "legacy-client",
+    "server_kex": "(default)",
+    "client_kex": "curve25519-sha256",
+    "exit": 0,
+    "client": {
+      "ident": "SSH-2.0-OpenSSH_10.1",
+      "kex": [
+        "curve25519-sha256",
+        "ext-info-c",
+        "kex-strict-c-v00@openssh.com"
+      ],
+      "hostkey_algs": [
+        "ssh-ed25519-cert-v01@openssh.com",
+        "ecdsa-sha2-nistp256-cert-v01@openssh.com",
+        "ecdsa-sha2-nistp384-cert-v01@openssh.com",
+        "ecdsa-sha2-nistp521-cert-v01@openssh.com",
+        "sk-ssh-ed25519-cert-v01@openssh.com",
+        "sk-ecdsa-sha2-nistp256-cert-v01@openssh.com",
+        "rsa-sha2-512-cert-v01@openssh.com",
+        "rsa-sha2-256-cert-v01@openssh.com",
+        "ssh-ed25519",
+        "ecdsa-sha2-nistp256",
+        "ecdsa-sha2-nistp384",
+        "ecdsa-sha2-nistp521",
+        "sk-ssh-ed25519@openssh.com",
+        "sk-ecdsa-sha2-nistp256@openssh.com",
+        "rsa-sha2-512",
+        "rsa-sha2-256"
+      ],
+      "ciphers": [
+        "chacha20-poly1305@openssh.com",
+        "aes128-gcm@openssh.com",
+        "aes256-gcm@openssh.com",
+        "aes128-ctr",
+        "aes192-ctr",
+        "aes256-ctr"
+      ],
+      "macs": [
+        "umac-64-etm@openssh.com",
+        "umac-128-etm@openssh.com",
+        "hmac-sha2-256-etm@openssh.com",
+        "hmac-sha2-512-etm@openssh.com",
+        "hmac-sha1-etm@openssh.com",
+        "umac-64@openssh.com",
+        "umac-128@openssh.com",
+        "hmac-sha2-256",
+        "hmac-sha2-512",
+        "hmac-sha1"
+      ],
+      "bytes_to_newkeys": 1344,
+      "packets": [
+        [
+          "KEXINIT",
+          1266
+        ],
+        [
+          "KEX_ECDH_INIT",
+          37
+        ],
+        [
+          "NEWKEYS",
+          1
+        ]
+      ]
+    },
+    "server": {
+      "ident": "SSH-2.0-OpenSSH_10.1",
+      "kex": [
+        "mlkem768x25519-sha256",
+        "sntrup761x25519-sha512",
+        "sntrup761x25519-sha512@openssh.com",
+        "curve25519-sha256",
+        "curve25519-sha256@libssh.org",
+        "ecdh-sha2-nistp256",
+        "ecdh-sha2-nistp384",
+        "ecdh-sha2-nistp521",
+        "ext-info-s",
+        "kex-strict-s-v00@openssh.com"
+      ],
+      "hostkey_algs": [
+        "ssh-ed25519",
+        "rsa-sha2-512",
+        "rsa-sha2-256"
+      ],
+      "ciphers": [
+        "chacha20-poly1305@openssh.com",
+        "aes128-gcm@openssh.com",
+        "aes256-gcm@openssh.com",
+        "aes128-ctr",
+        "aes192-ctr",
+        "aes256-ctr"
+      ],
+      "macs": [
+        "umac-64-etm@openssh.com",
+        "umac-128-etm@openssh.com",
+        "hmac-sha2-256-etm@openssh.com",
+        "hmac-sha2-512-etm@openssh.com",
+        "hmac-sha1-etm@openssh.com",
+        "umac-64@openssh.com",
+        "umac-128@openssh.com",
+        "hmac-sha2-256",
+        "hmac-sha2-512",
+        "hmac-sha1"
+      ],
+      "bytes_to_newkeys": 1224,
+      "packets": [
+        [
+          "KEXINIT",
+          1006
+        ],
+        [
+          "KEX_ECDH_REPLY",
+          179
+        ],
+        [
+          "NEWKEYS",
+          1
+        ]
+      ]
+    },
+    "negotiated_kex": "curve25519-sha256",
+    "negotiated_hostkey": "ssh-ed25519",
+    "quantum_level": 0,
+    "client_ephemeral_bytes": 32,
+    "server_ephemeral_bytes": 32,
+    "host_key_bytes": 51,
+    "signature_alg": "ssh-ed25519",
+    "signature_bytes": 83,
+    "strict_kex": true
+  },
+  {
+    "scenario": "legacy-server",
+    "server_kex": "curve25519-sha256,ecdh-sha2-nistp256",
+    "client_kex": "(default)",
+    "exit": 0,
+    "client": {
+      "ident": "SSH-2.0-OpenSSH_10.1",
+      "kex": [
+        "mlkem768x25519-sha256",
+        "sntrup761x25519-sha512",
+        "sntrup761x25519-sha512@openssh.com",
+        "curve25519-sha256",
+        "curve25519-sha256@libssh.org",
+        "ecdh-sha2-nistp256",
+        "ecdh-sha2-nistp384",
+        "ecdh-sha2-nistp521",
+        "diffie-hellman-group-exchange-sha256",
+        "diffie-hellman-group16-sha512",
+        "diffie-hellman-group18-sha512",
+        "diffie-hellman-group14-sha256",
+        "ext-info-c",
+        "kex-strict-c-v00@openssh.com"
+      ],
+      "hostkey_algs": [
+        "ssh-ed25519-cert-v01@openssh.com",
+        "ecdsa-sha2-nistp256-cert-v01@openssh.com",
+        "ecdsa-sha2-nistp384-cert-v01@openssh.com",
+        "ecdsa-sha2-nistp521-cert-v01@openssh.com",
+        "sk-ssh-ed25519-cert-v01@openssh.com",
+        "sk-ecdsa-sha2-nistp256-cert-v01@openssh.com",
+        "rsa-sha2-512-cert-v01@openssh.com",
+        "rsa-sha2-256-cert-v01@openssh.com",
+        "ssh-ed25519",
+        "ecdsa-sha2-nistp256",
+        "ecdsa-sha2-nistp384",
+        "ecdsa-sha2-nistp521",
+        "sk-ssh-ed25519@openssh.com",
+        "sk-ecdsa-sha2-nistp256@openssh.com",
+        "rsa-sha2-512",
+        "rsa-sha2-256"
+      ],
+      "ciphers": [
+        "chacha20-poly1305@openssh.com",
+        "aes128-gcm@openssh.com",
+        "aes256-gcm@openssh.com",
+        "aes128-ctr",
+        "aes192-ctr",
+        "aes256-ctr"
+      ],
+      "macs": [
+        "umac-64-etm@openssh.com",
+        "umac-128-etm@openssh.com",
+        "hmac-sha2-256-etm@openssh.com",
+        "hmac-sha2-512-etm@openssh.com",
+        "hmac-sha1-etm@openssh.com",
+        "umac-64@openssh.com",
+        "umac-128@openssh.com",
+        "hmac-sha2-256",
+        "hmac-sha2-512",
+        "hmac-sha1"
+      ],
+      "bytes_to_newkeys": 1632,
+      "packets": [
+        [
+          "KEXINIT",
+          1559
+        ],
+        [
+          "KEX_ECDH_INIT",
+          37
+        ],
+        [
+          "NEWKEYS",
+          1
+        ]
+      ]
+    },
+    "server": {
+      "ident": "SSH-2.0-OpenSSH_10.1",
+      "kex": [
+        "curve25519-sha256",
+        "ecdh-sha2-nistp256",
+        "ext-info-s",
+        "kex-strict-s-v00@openssh.com"
+      ],
+      "hostkey_algs": [
+        "ssh-ed25519",
+        "rsa-sha2-512",
+        "rsa-sha2-256"
+      ],
+      "ciphers": [
+        "chacha20-poly1305@openssh.com",
+        "aes128-gcm@openssh.com",
+        "aes256-gcm@openssh.com",
+        "aes128-ctr",
+        "aes192-ctr",
+        "aes256-ctr"
+      ],
+      "macs": [
+        "umac-64-etm@openssh.com",
+        "umac-128-etm@openssh.com",
+        "hmac-sha2-256-etm@openssh.com",
+        "hmac-sha2-512-etm@openssh.com",
+        "hmac-sha1-etm@openssh.com",
+        "umac-64@openssh.com",
+        "umac-128@openssh.com",
+        "hmac-sha2-256",
+        "hmac-sha2-512",
+        "hmac-sha1"
+      ],
+      "bytes_to_newkeys": 1080,
+      "packets": [
+        [
+          "KEXINIT",
+          859
+        ],
+        [
+          "KEX_ECDH_REPLY",
+          179
+        ],
+        [
+          "NEWKEYS",
+          1
+        ]
+      ]
+    },
+    "negotiated_kex": "curve25519-sha256",
+    "negotiated_hostkey": "ssh-ed25519",
+    "quantum_level": 0,
+    "client_ephemeral_bytes": 32,
+    "server_ephemeral_bytes": 32,
+    "host_key_bytes": 51,
+    "signature_alg": "ssh-ed25519",
+    "signature_bytes": 83,
+    "strict_kex": true
+  },
+  {
+    "scenario": "sntrup",
+    "server_kex": "sntrup761x25519-sha512",
+    "client_kex": "(default)",
+    "exit": 0,
+    "client": {
+      "ident": "SSH-2.0-OpenSSH_10.1",
+      "kex": [
+        "mlkem768x25519-sha256",
+        "sntrup761x25519-sha512",
+        "sntrup761x25519-sha512@openssh.com",
+        "curve25519-sha256",
+        "curve25519-sha256@libssh.org",
+        "ecdh-sha2-nistp256",
+        "ecdh-sha2-nistp384",
+        "ecdh-sha2-nistp521",
+        "diffie-hellman-group-exchange-sha256",
+        "diffie-hellman-group16-sha512",
+        "diffie-hellman-group18-sha512",
+        "diffie-hellman-group14-sha256",
+        "ext-info-c",
+        "kex-strict-c-v00@openssh.com"
+      ],
+      "hostkey_algs": [
+        "ssh-ed25519-cert-v01@openssh.com",
+        "ecdsa-sha2-nistp256-cert-v01@openssh.com",
+        "ecdsa-sha2-nistp384-cert-v01@openssh.com",
+        "ecdsa-sha2-nistp521-cert-v01@openssh.com",
+        "sk-ssh-ed25519-cert-v01@openssh.com",
+        "sk-ecdsa-sha2-nistp256-cert-v01@openssh.com",
+        "rsa-sha2-512-cert-v01@openssh.com",
+        "rsa-sha2-256-cert-v01@openssh.com",
+        "ssh-ed25519",
+        "ecdsa-sha2-nistp256",
+        "ecdsa-sha2-nistp384",
+        "ecdsa-sha2-nistp521",
+        "sk-ssh-ed25519@openssh.com",
+        "sk-ecdsa-sha2-nistp256@openssh.com",
+        "rsa-sha2-512",
+        "rsa-sha2-256"
+      ],
+      "ciphers": [
+        "chacha20-poly1305@openssh.com",
+        "aes128-gcm@openssh.com",
+        "aes256-gcm@openssh.com",
+        "aes128-ctr",
+        "aes192-ctr",
+        "aes256-ctr"
+      ],
+      "macs": [
+        "umac-64-etm@openssh.com",
+        "umac-128-etm@openssh.com",
+        "hmac-sha2-256-etm@openssh.com",
+        "hmac-sha2-512-etm@openssh.com",
+        "hmac-sha1-etm@openssh.com",
+        "umac-64@openssh.com",
+        "umac-128@openssh.com",
+        "hmac-sha2-256",
+        "hmac-sha2-512",
+        "hmac-sha1"
+      ],
+      "bytes_to_newkeys": 2792,
+      "packets": [
+        [
+          "KEXINIT",
+          1559
+        ],
+        [
+          "KEX_ECDH_INIT",
+          1195
+        ],
+        [
+          "NEWKEYS",
+          1
+        ]
+      ]
+    },
+    "server": {
+      "ident": "SSH-2.0-OpenSSH_10.1",
+      "kex": [
+        "sntrup761x25519-sha512",
+        "ext-info-s",
+        "kex-strict-s-v00@openssh.com"
+      ],
+      "hostkey_algs": [
+        "ssh-ed25519",
+        "rsa-sha2-512",
+        "rsa-sha2-256"
+      ],
+      "ciphers": [
+        "chacha20-poly1305@openssh.com",
+        "aes128-gcm@openssh.com",
+        "aes256-gcm@openssh.com",
+        "aes128-ctr",
+        "aes192-ctr",
+        "aes256-ctr"
+      ],
+      "macs": [
+        "umac-64-etm@openssh.com",
+        "umac-128-etm@openssh.com",
+        "hmac-sha2-256-etm@openssh.com",
+        "hmac-sha2-512-etm@openssh.com",
+        "hmac-sha1-etm@openssh.com",
+        "umac-64@openssh.com",
+        "umac-128@openssh.com",
+        "hmac-sha2-256",
+        "hmac-sha2-512",
+        "hmac-sha1"
+      ],
+      "bytes_to_newkeys": 2104,
+      "packets": [
+        [
+          "KEXINIT",
+          845
+        ],
+        [
+          "KEX_ECDH_REPLY",
+          1218
+        ],
+        [
+          "NEWKEYS",
+          1
+        ]
+      ]
+    },
+    "negotiated_kex": "sntrup761x25519-sha512",
+    "negotiated_hostkey": "ssh-ed25519",
+    "quantum_level": 3,
+    "client_ephemeral_bytes": 1190,
+    "server_ephemeral_bytes": 1071,
+    "host_key_bytes": 51,
+    "signature_alg": "ssh-ed25519",
+    "signature_bytes": 83,
+    "strict_kex": true
+  },
+  {
+    "scenario": "mismatch",
+    "server_kex": "mlkem768x25519-sha256",
+    "client_kex": "curve25519-sha256",
+    "exit": 255,
+    "client": {
+      "ident": "SSH-2.0-OpenSSH_10.1",
+      "kex": [
+        "curve25519-sha256",
+        "ext-info-c",
+        "kex-strict-c-v00@openssh.com"
+      ],
+      "hostkey_algs": [
+        "ssh-ed25519-cert-v01@openssh.com",
+        "ecdsa-sha2-nistp256-cert-v01@openssh.com",
+        "ecdsa-sha2-nistp384-cert-v01@openssh.com",
+        "ecdsa-sha2-nistp521-cert-v01@openssh.com",
+        "sk-ssh-ed25519-cert-v01@openssh.com",
+        "sk-ecdsa-sha2-nistp256-cert-v01@openssh.com",
+        "rsa-sha2-512-cert-v01@openssh.com",
+        "rsa-sha2-256-cert-v01@openssh.com",
+        "ssh-ed25519",
+        "ecdsa-sha2-nistp256",
+        "ecdsa-sha2-nistp384",
+        "ecdsa-sha2-nistp521",
+        "sk-ssh-ed25519@openssh.com",
+        "sk-ecdsa-sha2-nistp256@openssh.com",
+        "rsa-sha2-512",
+        "rsa-sha2-256"
+      ],
+      "ciphers": [
+        "chacha20-poly1305@openssh.com",
+        "aes128-gcm@openssh.com",
+        "aes256-gcm@openssh.com",
+        "aes128-ctr",
+        "aes192-ctr",
+        "aes256-ctr"
+      ],
+      "macs": [
+        "umac-64-etm@openssh.com",
+        "umac-128-etm@openssh.com",
+        "hmac-sha2-256-etm@openssh.com",
+        "hmac-sha2-512-etm@openssh.com",
+        "hmac-sha1-etm@openssh.com",
+        "umac-64@openssh.com",
+        "umac-128@openssh.com",
+        "hmac-sha2-256",
+        "hmac-sha2-512",
+        "hmac-sha1"
+      ],
+      "bytes_to_newkeys": 1280,
+      "packets": [
+        [
+          "KEXINIT",
+          1266
+        ]
+      ]
+    },
+    "server": {
+      "ident": "SSH-2.0-OpenSSH_10.1",
+      "kex": [
+        "mlkem768x25519-sha256",
+        "ext-info-s",
+        "kex-strict-s-v00@openssh.com"
+      ],
+      "hostkey_algs": [
+        "ssh-ed25519",
+        "rsa-sha2-512",
+        "rsa-sha2-256"
+      ],
+      "ciphers": [
+        "chacha20-poly1305@openssh.com",
+        "aes128-gcm@openssh.com",
+        "aes256-gcm@openssh.com",
+        "aes128-ctr",
+        "aes192-ctr",
+        "aes256-ctr"
+      ],
+      "macs": [
+        "umac-64-etm@openssh.com",
+        "umac-128-etm@openssh.com",
+        "hmac-sha2-256-etm@openssh.com",
+        "hmac-sha2-512-etm@openssh.com",
+        "hmac-sha1-etm@openssh.com",
+        "umac-64@openssh.com",
+        "umac-128@openssh.com",
+        "hmac-sha2-256",
+        "hmac-sha2-512",
+        "hmac-sha1"
+      ],
+      "bytes_to_newkeys": 856,
+      "packets": [
+        [
+          "KEXINIT",
+          844
+        ]
+      ]
+    },
+    "negotiated_kex": "",
+    "negotiated_hostkey": "ssh-ed25519",
+    "quantum_level": 0,
+    "client_ephemeral_bytes": 0,
+    "server_ephemeral_bytes": 0,
+    "host_key_bytes": 0,
+    "signature_alg": "",
+    "signature_bytes": 0,
+    "strict_kex": true
+  }
+]

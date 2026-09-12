@@ -1,0 +1,23 @@
+{
+  "objects": 200,
+  "object_kib": 64,
+  "headers": {
+    "rsa3072": 438,
+    "mlkem768": 1208,
+    "xwing": 1234
+  },
+  "rekey_mlkem768": {
+    "objects": 200,
+    "header_bytes_read": 87600,
+    "header_bytes_written": 241600,
+    "body_bytes_untouched": 13112800,
+    "seconds": 0.276
+  },
+  "rekey_xwing": {
+    "objects": 200,
+    "header_bytes_read": 241600,
+    "header_bytes_written": 246800,
+    "body_bytes_untouched": 13112800,
+    "seconds": 0.075
+  }
+}

@@ -1,0 +1,5 @@
+scene 1: 4 builds signed; one-time key indices used: [0]  <- the same q every time
+scene 2: with 2 reused signatures: not found after 1,000,000 tries in 20.4 s (gave up; at least 2,694,384 tries needed on the uniform-digit model, which underestimates)
+scene 2: with 3 reused signatures: FORGED after 99,432 tries in 2.1 s
+scene 3: before crash used q = [0, 1, 2]; after restart q = [8, 9]; indices [3, 4, 5, 6, 7] were lost, none reused; 22 signatures left of 32
+written /home/claude/pqm_book/labs/ch08/results/statefail.json

@@ -1,0 +1,103 @@
+[
+  {
+    "alg": "ES256",
+    "token_bytes": 677,
+    "header_b64": 62,
+    "payload_b64": 527,
+    "signature_b64": 86,
+    "signature_raw": 64,
+    "jwk_bytes": 145,
+    "sign_ms": 0.07,
+    "verify_ms": 0.159,
+    "fits": {
+      "cookie (RFC 6265 min)": true,
+      "nginx header line": true,
+      "Apache header line": true,
+      "ALB/CloudFront headers": true,
+      "Node.js all headers": true
+    }
+  },
+  {
+    "alg": "EdDSA",
+    "token_bytes": 677,
+    "header_b64": 62,
+    "payload_b64": 527,
+    "signature_b64": 86,
+    "signature_raw": 64,
+    "jwk_bytes": 98,
+    "sign_ms": 0.055,
+    "verify_ms": 0.151,
+    "fits": {
+      "cookie (RFC 6265 min)": true,
+      "nginx header line": true,
+      "Apache header line": true,
+      "ALB/CloudFront headers": true,
+      "Node.js all headers": true
+    }
+  },
+  {
+    "alg": "ML-DSA-44",
+    "token_bytes": 3823,
+    "header_b64": 67,
+    "payload_b64": 527,
+    "signature_b64": 3227,
+    "signature_raw": 2420,
+    "jwk_bytes": 1809,
+    "sign_ms": 0.589,
+    "verify_ms": 0.179,
+    "fits": {
+      "cookie (RFC 6265 min)": true,
+      "nginx header line": true,
+      "Apache header line": true,
+      "ALB/CloudFront headers": true,
+      "Node.js all headers": true
+    }
+  },
+  {
+    "alg": "ML-DSA-65",
+    "token_bytes": 5008,
+    "header_b64": 67,
+    "payload_b64": 527,
+    "signature_b64": 4412,
+    "signature_raw": 3309,
+    "jwk_bytes": 2662,
+    "sign_ms": 0.961,
+    "verify_ms": 0.246,
+    "fits": {
+      "cookie (RFC 6265 min)": false,
+      "nginx header line": true,
+      "Apache header line": true,
+      "ALB/CloudFront headers": true,
+      "Node.js all headers": true
+    }
+  },
+  {
+    "alg": "ML-DSA-87",
+    "token_bytes": 6766,
+    "header_b64": 67,
+    "payload_b64": 527,
+    "signature_b64": 6170,
+    "signature_raw": 4627,
+    "jwk_bytes": 3515,
+    "sign_ms": 1.208,
+    "verify_ms": 0.395,
+    "fits": {
+      "cookie (RFC 6265 min)": false,
+      "nginx header line": true,
+      "Apache header line": true,
+      "ALB/CloudFront headers": true,
+      "Node.js all headers": true
+    }
+  },
+  {
+    "alg": "ML-DSA-65 + x5c (2 certs)",
+    "token_bytes": 25043,
+    "fits": {
+      "cookie (RFC 6265 min)": false,
+      "nginx header line": false,
+      "Apache header line": false,
+      "ALB/CloudFront headers": false,
+      "Node.js all headers": false
+    }
+  }
+]

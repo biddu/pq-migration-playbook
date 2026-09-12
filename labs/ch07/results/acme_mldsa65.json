@@ -1,0 +1,7 @@
+[
+  {
+    "host": "localhost",
+    "csr_key": "ML-DSA-65",
+    "error": "finalize 400: {'type': 'urn:ietf:params:acme:error:badCSR', 'detail': 'Bad signature on CSR: x509: cannot verify signature: algorithm unimplemented', 'status': 400}"
+  }
+]

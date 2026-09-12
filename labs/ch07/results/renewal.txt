@@ -1,0 +1,13 @@
+today 2026-09-12: certificates issued now may live 200 days; renew on day 133, leaving 67 days to repair a failure; domain validation reusable for 200 days
+measured ACME issuance (Pebble, http-01, P-256 CSR): 131 ms per certificate
+
+fleet of 1200 certificates, renewing at two-thirds of lifetime:
+
+from         max life renew at  repair renewals/yr  per day  CA busy/day DV reuse
+---------------------------------------------------------------------------------
+2025-01-01        398      265     133        1653      4.5        0.6 s      398
+2026-03-15        200      133      67        3293      9.0        1.2 s      200
+2027-03-15        100       66      34        6636     18.2        2.4 s      100
+2029-03-15         47       31      16       14129     38.7        5.1 s       10
+
+At ten minutes of human attention per renewal, the last row is 6.5 hours of work every day, weekends included.

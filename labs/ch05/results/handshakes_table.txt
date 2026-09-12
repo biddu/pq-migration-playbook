@@ -1,0 +1,12 @@
+scenario       cert     negotiated            CH B CH seg  HRR   SH B srv flight B  seg    c2s    s2c
+classical      ecdsa    X25519                 219      1   no    127          831    1    323   1365
+hybrid         ecdsa    X25519MLKEM768        1403      1   no   1215         1919    2   1507   2453
+hybrid-1024    ecdsa    SecP384r1MLKEM1024    1842      2   no   1760         2463    2   1946   2997
+hrr            ecdsa    X25519MLKEM768         252      1  yes   1215         1912    2   1759   2545
+legacy-client  ecdsa    X25519                 217      1   no    127          840    1    321   1374
+classical      mldsa65  X25519                 219      1   no    127         9217    7    323   9751
+hybrid         mldsa65  X25519MLKEM768        1403      1   no   1215        10305    8   1507  10839
+hybrid-1024    mldsa65  SecP384r1MLKEM1024    1842      2   no   1760        10850    8   1946  11384
+hrr            mldsa65  X25519MLKEM768         252      1  yes   1215        10299    8   1759  10932
+legacy-client  mldsa65  X25519                 217      1   no    127         9227    7    321   9761
+

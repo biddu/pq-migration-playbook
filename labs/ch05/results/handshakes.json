@@ -1,0 +1,1390 @@
+[
+  {
+    "scenario": "classical",
+    "cert": "ecdsa",
+    "server_groups": "X25519:secp256r1",
+    "client_groups": "X25519:secp256r1",
+    "negotiated": "X25519",
+    "records": [
+      {
+        "direction": "c2s",
+        "content_type": "handshake",
+        "length": 214,
+        "handshake": "ClientHello",
+        "detail": {
+          "supported_groups": [
+            "X25519",
+            "secp256r1"
+          ],
+          "key_shares": [
+            {
+              "group": "X25519",
+              "bytes": 32
+            }
+          ]
+        }
+      },
+      {
+        "direction": "s2c",
+        "content_type": "handshake",
+        "length": 122,
+        "handshake": "ServerHello",
+        "detail": {
+          "selected_group": "X25519",
+          "key_share_bytes": 32
+        }
+      },
+      {
+        "direction": "s2c",
+        "content_type": "change_cipher_spec",
+        "length": 1,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 23,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 489,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 97,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 69,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "c2s",
+        "content_type": "change_cipher_spec",
+        "length": 1,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "c2s",
+        "content_type": "application_data",
+        "length": 69,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 250,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 250,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 19,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "c2s",
+        "content_type": "application_data",
+        "length": 19,
+        "handshake": "",
+        "detail": {}
+      }
+    ],
+    "bytes_c2s": 323,
+    "bytes_s2c": 1365,
+    "client_hello_bytes": 219,
+    "client_key_shares": [
+      {
+        "group": "X25519",
+        "bytes": 32
+      }
+    ],
+    "client_supported_groups": [
+      "X25519",
+      "secp256r1"
+    ],
+    "hello_retry_request": false,
+    "hrr_selected_group": "",
+    "server_selected_group": "X25519",
+    "server_key_share_bytes": 32,
+    "server_hello_bytes": 127,
+    "server_first_flight_bytes": 831,
+    "round_trips": 1
+  },
+  {
+    "scenario": "hybrid",
+    "cert": "ecdsa",
+    "server_groups": "X25519MLKEM768:X25519",
+    "client_groups": "X25519MLKEM768:X25519",
+    "negotiated": "X25519MLKEM768",
+    "records": [
+      {
+        "direction": "c2s",
+        "content_type": "handshake",
+        "length": 1398,
+        "handshake": "ClientHello",
+        "detail": {
+          "supported_groups": [
+            "X25519MLKEM768",
+            "X25519"
+          ],
+          "key_shares": [
+            {
+              "group": "X25519MLKEM768",
+              "bytes": 1216
+            }
+          ]
+        }
+      },
+      {
+        "direction": "s2c",
+        "content_type": "handshake",
+        "length": 1210,
+        "handshake": "ServerHello",
+        "detail": {
+          "selected_group": "X25519MLKEM768",
+          "key_share_bytes": 1120
+        }
+      },
+      {
+        "direction": "s2c",
+        "content_type": "change_cipher_spec",
+        "length": 1,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 23,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 489,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 97,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 69,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "c2s",
+        "content_type": "change_cipher_spec",
+        "length": 1,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "c2s",
+        "content_type": "application_data",
+        "length": 69,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "c2s",
+        "content_type": "application_data",
+        "length": 19,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 250,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 250,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 19,
+        "handshake": "",
+        "detail": {}
+      }
+    ],
+    "bytes_c2s": 1507,
+    "bytes_s2c": 2453,
+    "client_hello_bytes": 1403,
+    "client_key_shares": [
+      {
+        "group": "X25519MLKEM768",
+        "bytes": 1216
+      }
+    ],
+    "client_supported_groups": [
+      "X25519MLKEM768",
+      "X25519"
+    ],
+    "hello_retry_request": false,
+    "hrr_selected_group": "",
+    "server_selected_group": "X25519MLKEM768",
+    "server_key_share_bytes": 1120,
+    "server_hello_bytes": 1215,
+    "server_first_flight_bytes": 1919,
+    "round_trips": 1
+  },
+  {
+    "scenario": "hybrid-1024",
+    "cert": "ecdsa",
+    "server_groups": "SecP384r1MLKEM1024",
+    "client_groups": "SecP384r1MLKEM1024",
+    "negotiated": "SecP384r1MLKEM1024",
+    "records": [
+      {
+        "direction": "c2s",
+        "content_type": "handshake",
+        "length": 1837,
+        "handshake": "ClientHello",
+        "detail": {
+          "supported_groups": [
+            "SecP384r1MLKEM1024"
+          ],
+          "key_shares": [
+            {
+              "group": "SecP384r1MLKEM1024",
+              "bytes": 1665
+            }
+          ]
+        }
+      },
+      {
+        "direction": "s2c",
+        "content_type": "handshake",
+        "length": 1755,
+        "handshake": "ServerHello",
+        "detail": {
+          "selected_group": "SecP384r1MLKEM1024",
+          "key_share_bytes": 1665
+        }
+      },
+      {
+        "direction": "s2c",
+        "content_type": "change_cipher_spec",
+        "length": 1,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 23,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 489,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 96,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 69,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "c2s",
+        "content_type": "change_cipher_spec",
+        "length": 1,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "c2s",
+        "content_type": "application_data",
+        "length": 69,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "c2s",
+        "content_type": "application_data",
+        "length": 19,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 250,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 250,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 19,
+        "handshake": "",
+        "detail": {}
+      }
+    ],
+    "bytes_c2s": 1946,
+    "bytes_s2c": 2997,
+    "client_hello_bytes": 1842,
+    "client_key_shares": [
+      {
+        "group": "SecP384r1MLKEM1024",
+        "bytes": 1665
+      }
+    ],
+    "client_supported_groups": [
+      "SecP384r1MLKEM1024"
+    ],
+    "hello_retry_request": false,
+    "hrr_selected_group": "",
+    "server_selected_group": "SecP384r1MLKEM1024",
+    "server_key_share_bytes": 1665,
+    "server_hello_bytes": 1760,
+    "server_first_flight_bytes": 2463,
+    "round_trips": 1
+  },
+  {
+    "scenario": "hrr",
+    "cert": "ecdsa",
+    "server_groups": "X25519MLKEM768",
+    "client_groups": "secp256r1:X25519MLKEM768",
+    "negotiated": "X25519MLKEM768",
+    "records": [
+      {
+        "direction": "c2s",
+        "content_type": "handshake",
+        "length": 247,
+        "handshake": "ClientHello",
+        "detail": {
+          "supported_groups": [
+            "secp256r1",
+            "X25519MLKEM768"
+          ],
+          "key_shares": [
+            {
+              "group": "secp256r1",
+              "bytes": 65
+            }
+          ]
+        }
+      },
+      {
+        "direction": "s2c",
+        "content_type": "handshake",
+        "length": 88,
+        "handshake": "ServerHello",
+        "detail": {
+          "hello_retry_request": true,
+          "selected_group": "X25519MLKEM768"
+        }
+      },
+      {
+        "direction": "s2c",
+        "content_type": "change_cipher_spec",
+        "length": 1,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "c2s",
+        "content_type": "change_cipher_spec",
+        "length": 1,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "c2s",
+        "content_type": "handshake",
+        "length": 1398,
+        "handshake": "ClientHello",
+        "detail": {
+          "supported_groups": [
+            "secp256r1",
+            "X25519MLKEM768"
+          ],
+          "key_shares": [
+            {
+              "group": "X25519MLKEM768",
+              "bytes": 1216
+            }
+          ]
+        }
+      },
+      {
+        "direction": "s2c",
+        "content_type": "handshake",
+        "length": 1210,
+        "handshake": "ServerHello",
+        "detail": {
+          "selected_group": "X25519MLKEM768",
+          "key_share_bytes": 1120
+        }
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 23,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 489,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 96,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 69,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "c2s",
+        "content_type": "application_data",
+        "length": 69,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "c2s",
+        "content_type": "application_data",
+        "length": 19,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 250,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 250,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 19,
+        "handshake": "",
+        "detail": {}
+      }
+    ],
+    "bytes_c2s": 1759,
+    "bytes_s2c": 2545,
+    "client_hello_bytes": 252,
+    "client_key_shares": [
+      {
+        "group": "X25519MLKEM768",
+        "bytes": 1216
+      }
+    ],
+    "client_supported_groups": [
+      "secp256r1",
+      "X25519MLKEM768"
+    ],
+    "hello_retry_request": true,
+    "hrr_selected_group": "X25519MLKEM768",
+    "server_selected_group": "X25519MLKEM768",
+    "server_key_share_bytes": 1120,
+    "server_hello_bytes": 1215,
+    "server_first_flight_bytes": 1912,
+    "round_trips": 2
+  },
+  {
+    "scenario": "legacy-client",
+    "cert": "ecdsa",
+    "server_groups": "X25519MLKEM768:X25519",
+    "client_groups": "X25519",
+    "negotiated": "X25519",
+    "records": [
+      {
+        "direction": "c2s",
+        "content_type": "handshake",
+        "length": 212,
+        "handshake": "ClientHello",
+        "detail": {
+          "supported_groups": [
+            "X25519"
+          ],
+          "key_shares": [
+            {
+              "group": "X25519",
+              "bytes": 32
+            }
+          ]
+        }
+      },
+      {
+        "direction": "s2c",
+        "content_type": "handshake",
+        "length": 122,
+        "handshake": "ServerHello",
+        "detail": {
+          "selected_group": "X25519",
+          "key_share_bytes": 32
+        }
+      },
+      {
+        "direction": "s2c",
+        "content_type": "change_cipher_spec",
+        "length": 1,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 33,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 489,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 96,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 69,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "c2s",
+        "content_type": "change_cipher_spec",
+        "length": 1,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "c2s",
+        "content_type": "application_data",
+        "length": 69,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 250,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 250,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 19,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "c2s",
+        "content_type": "application_data",
+        "length": 19,
+        "handshake": "",
+        "detail": {}
+      }
+    ],
+    "bytes_c2s": 321,
+    "bytes_s2c": 1374,
+    "client_hello_bytes": 217,
+    "client_key_shares": [
+      {
+        "group": "X25519",
+        "bytes": 32
+      }
+    ],
+    "client_supported_groups": [
+      "X25519"
+    ],
+    "hello_retry_request": false,
+    "hrr_selected_group": "",
+    "server_selected_group": "X25519",
+    "server_key_share_bytes": 32,
+    "server_hello_bytes": 127,
+    "server_first_flight_bytes": 840,
+    "round_trips": 1
+  },
+  {
+    "scenario": "classical",
+    "cert": "mldsa65",
+    "server_groups": "X25519:secp256r1",
+    "client_groups": "X25519:secp256r1",
+    "negotiated": "X25519",
+    "records": [
+      {
+        "direction": "c2s",
+        "content_type": "handshake",
+        "length": 214,
+        "handshake": "ClientHello",
+        "detail": {
+          "supported_groups": [
+            "X25519",
+            "secp256r1"
+          ],
+          "key_shares": [
+            {
+              "group": "X25519",
+              "bytes": 32
+            }
+          ]
+        }
+      },
+      {
+        "direction": "s2c",
+        "content_type": "handshake",
+        "length": 122,
+        "handshake": "ServerHello",
+        "detail": {
+          "selected_group": "X25519",
+          "key_share_bytes": 32
+        }
+      },
+      {
+        "direction": "s2c",
+        "content_type": "change_cipher_spec",
+        "length": 1,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 23,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 5638,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 3334,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 69,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "c2s",
+        "content_type": "change_cipher_spec",
+        "length": 1,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "c2s",
+        "content_type": "application_data",
+        "length": 69,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 250,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 250,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 19,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "c2s",
+        "content_type": "application_data",
+        "length": 19,
+        "handshake": "",
+        "detail": {}
+      }
+    ],
+    "bytes_c2s": 323,
+    "bytes_s2c": 9751,
+    "client_hello_bytes": 219,
+    "client_key_shares": [
+      {
+        "group": "X25519",
+        "bytes": 32
+      }
+    ],
+    "client_supported_groups": [
+      "X25519",
+      "secp256r1"
+    ],
+    "hello_retry_request": false,
+    "hrr_selected_group": "",
+    "server_selected_group": "X25519",
+    "server_key_share_bytes": 32,
+    "server_hello_bytes": 127,
+    "server_first_flight_bytes": 9217,
+    "round_trips": 1
+  },
+  {
+    "scenario": "hybrid",
+    "cert": "mldsa65",
+    "server_groups": "X25519MLKEM768:X25519",
+    "client_groups": "X25519MLKEM768:X25519",
+    "negotiated": "X25519MLKEM768",
+    "records": [
+      {
+        "direction": "c2s",
+        "content_type": "handshake",
+        "length": 1398,
+        "handshake": "ClientHello",
+        "detail": {
+          "supported_groups": [
+            "X25519MLKEM768",
+            "X25519"
+          ],
+          "key_shares": [
+            {
+              "group": "X25519MLKEM768",
+              "bytes": 1216
+            }
+          ]
+        }
+      },
+      {
+        "direction": "s2c",
+        "content_type": "handshake",
+        "length": 1210,
+        "handshake": "ServerHello",
+        "detail": {
+          "selected_group": "X25519MLKEM768",
+          "key_share_bytes": 1120
+        }
+      },
+      {
+        "direction": "s2c",
+        "content_type": "change_cipher_spec",
+        "length": 1,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 23,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 5638,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 3334,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 69,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "c2s",
+        "content_type": "change_cipher_spec",
+        "length": 1,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "c2s",
+        "content_type": "application_data",
+        "length": 69,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 250,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 250,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 19,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "c2s",
+        "content_type": "application_data",
+        "length": 19,
+        "handshake": "",
+        "detail": {}
+      }
+    ],
+    "bytes_c2s": 1507,
+    "bytes_s2c": 10839,
+    "client_hello_bytes": 1403,
+    "client_key_shares": [
+      {
+        "group": "X25519MLKEM768",
+        "bytes": 1216
+      }
+    ],
+    "client_supported_groups": [
+      "X25519MLKEM768",
+      "X25519"
+    ],
+    "hello_retry_request": false,
+    "hrr_selected_group": "",
+    "server_selected_group": "X25519MLKEM768",
+    "server_key_share_bytes": 1120,
+    "server_hello_bytes": 1215,
+    "server_first_flight_bytes": 10305,
+    "round_trips": 1
+  },
+  {
+    "scenario": "hybrid-1024",
+    "cert": "mldsa65",
+    "server_groups": "SecP384r1MLKEM1024",
+    "client_groups": "SecP384r1MLKEM1024",
+    "negotiated": "SecP384r1MLKEM1024",
+    "records": [
+      {
+        "direction": "c2s",
+        "content_type": "handshake",
+        "length": 1837,
+        "handshake": "ClientHello",
+        "detail": {
+          "supported_groups": [
+            "SecP384r1MLKEM1024"
+          ],
+          "key_shares": [
+            {
+              "group": "SecP384r1MLKEM1024",
+              "bytes": 1665
+            }
+          ]
+        }
+      },
+      {
+        "direction": "s2c",
+        "content_type": "handshake",
+        "length": 1755,
+        "handshake": "ServerHello",
+        "detail": {
+          "selected_group": "SecP384r1MLKEM1024",
+          "key_share_bytes": 1665
+        }
+      },
+      {
+        "direction": "s2c",
+        "content_type": "change_cipher_spec",
+        "length": 1,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 23,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 5638,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 3334,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 69,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "c2s",
+        "content_type": "change_cipher_spec",
+        "length": 1,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "c2s",
+        "content_type": "application_data",
+        "length": 69,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 250,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 250,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 19,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "c2s",
+        "content_type": "application_data",
+        "length": 19,
+        "handshake": "",
+        "detail": {}
+      }
+    ],
+    "bytes_c2s": 1946,
+    "bytes_s2c": 11384,
+    "client_hello_bytes": 1842,
+    "client_key_shares": [
+      {
+        "group": "SecP384r1MLKEM1024",
+        "bytes": 1665
+      }
+    ],
+    "client_supported_groups": [
+      "SecP384r1MLKEM1024"
+    ],
+    "hello_retry_request": false,
+    "hrr_selected_group": "",
+    "server_selected_group": "SecP384r1MLKEM1024",
+    "server_key_share_bytes": 1665,
+    "server_hello_bytes": 1760,
+    "server_first_flight_bytes": 10850,
+    "round_trips": 1
+  },
+  {
+    "scenario": "hrr",
+    "cert": "mldsa65",
+    "server_groups": "X25519MLKEM768",
+    "client_groups": "secp256r1:X25519MLKEM768",
+    "negotiated": "X25519MLKEM768",
+    "records": [
+      {
+        "direction": "c2s",
+        "content_type": "handshake",
+        "length": 247,
+        "handshake": "ClientHello",
+        "detail": {
+          "supported_groups": [
+            "secp256r1",
+            "X25519MLKEM768"
+          ],
+          "key_shares": [
+            {
+              "group": "secp256r1",
+              "bytes": 65
+            }
+          ]
+        }
+      },
+      {
+        "direction": "s2c",
+        "content_type": "handshake",
+        "length": 88,
+        "handshake": "ServerHello",
+        "detail": {
+          "hello_retry_request": true,
+          "selected_group": "X25519MLKEM768"
+        }
+      },
+      {
+        "direction": "s2c",
+        "content_type": "change_cipher_spec",
+        "length": 1,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "c2s",
+        "content_type": "change_cipher_spec",
+        "length": 1,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "c2s",
+        "content_type": "handshake",
+        "length": 1398,
+        "handshake": "ClientHello",
+        "detail": {
+          "supported_groups": [
+            "secp256r1",
+            "X25519MLKEM768"
+          ],
+          "key_shares": [
+            {
+              "group": "X25519MLKEM768",
+              "bytes": 1216
+            }
+          ]
+        }
+      },
+      {
+        "direction": "s2c",
+        "content_type": "handshake",
+        "length": 1210,
+        "handshake": "ServerHello",
+        "detail": {
+          "selected_group": "X25519MLKEM768",
+          "key_share_bytes": 1120
+        }
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 23,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 5638,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 3334,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 69,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "c2s",
+        "content_type": "application_data",
+        "length": 69,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "c2s",
+        "content_type": "application_data",
+        "length": 19,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 250,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 250,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 19,
+        "handshake": "",
+        "detail": {}
+      }
+    ],
+    "bytes_c2s": 1759,
+    "bytes_s2c": 10932,
+    "client_hello_bytes": 252,
+    "client_key_shares": [
+      {
+        "group": "X25519MLKEM768",
+        "bytes": 1216
+      }
+    ],
+    "client_supported_groups": [
+      "secp256r1",
+      "X25519MLKEM768"
+    ],
+    "hello_retry_request": true,
+    "hrr_selected_group": "X25519MLKEM768",
+    "server_selected_group": "X25519MLKEM768",
+    "server_key_share_bytes": 1120,
+    "server_hello_bytes": 1215,
+    "server_first_flight_bytes": 10299,
+    "round_trips": 2
+  },
+  {
+    "scenario": "legacy-client",
+    "cert": "mldsa65",
+    "server_groups": "X25519MLKEM768:X25519",
+    "client_groups": "X25519",
+    "negotiated": "X25519",
+    "records": [
+      {
+        "direction": "c2s",
+        "content_type": "handshake",
+        "length": 212,
+        "handshake": "ClientHello",
+        "detail": {
+          "supported_groups": [
+            "X25519"
+          ],
+          "key_shares": [
+            {
+              "group": "X25519",
+              "bytes": 32
+            }
+          ]
+        }
+      },
+      {
+        "direction": "s2c",
+        "content_type": "handshake",
+        "length": 122,
+        "handshake": "ServerHello",
+        "detail": {
+          "selected_group": "X25519",
+          "key_share_bytes": 32
+        }
+      },
+      {
+        "direction": "s2c",
+        "content_type": "change_cipher_spec",
+        "length": 1,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 33,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 5638,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 3334,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 69,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "c2s",
+        "content_type": "change_cipher_spec",
+        "length": 1,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "c2s",
+        "content_type": "application_data",
+        "length": 69,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "c2s",
+        "content_type": "application_data",
+        "length": 19,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 250,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 250,
+        "handshake": "",
+        "detail": {}
+      },
+      {
+        "direction": "s2c",
+        "content_type": "application_data",
+        "length": 19,
+        "handshake": "",
+        "detail": {}
+      }
+    ],
+    "bytes_c2s": 321,
+    "bytes_s2c": 9761,
+    "client_hello_bytes": 217,
+    "client_key_shares": [
+      {
+        "group": "X25519",
+        "bytes": 32
+      }
+    ],
+    "client_supported_groups": [
+      "X25519"
+    ],
+    "hello_retry_request": false,
+    "hrr_selected_group": "",
+    "server_selected_group": "X25519",
+    "server_key_share_bytes": 32,
+    "server_hello_bytes": 127,
+    "server_first_flight_bytes": 9227,
+    "round_trips": 1
+  }
+]

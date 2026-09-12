@@ -1,0 +1,222 @@
+[
+  {
+    "host": "localhost",
+    "csr_key": "P-256",
+    "ms": 430.6,
+    "not_after": "2026-10-29T13:32:56+00:00",
+    "lifetime_days": 46,
+    "chain_bytes": 1434,
+    "chain_len": 2,
+    "leaf_sig_alg": "sha256WithRSAEncryption",
+    "posts": 10
+  },
+  {
+    "host": "localhost",
+    "csr_key": "P-256",
+    "ms": 14.9,
+    "not_after": "2026-10-29T13:32:56+00:00",
+    "lifetime_days": 46,
+    "chain_bytes": 1434,
+    "chain_len": 2,
+    "leaf_sig_alg": "sha256WithRSAEncryption",
+    "posts": 15
+  },
+  {
+    "host": "localhost",
+    "csr_key": "P-256",
+    "ms": 20.9,
+    "not_after": "2026-10-29T13:32:56+00:00",
+    "lifetime_days": 46,
+    "chain_bytes": 1434,
+    "chain_len": 2,
+    "leaf_sig_alg": "sha256WithRSAEncryption",
+    "posts": 22
+  },
+  {
+    "host": "localhost",
+    "csr_key": "P-256",
+    "ms": 228.0,
+    "not_after": "2026-10-29T13:32:56+00:00",
+    "lifetime_days": 46,
+    "chain_bytes": 1434,
+    "chain_len": 2,
+    "leaf_sig_alg": "sha256WithRSAEncryption",
+    "posts": 30
+  },
+  {
+    "host": "localhost",
+    "csr_key": "P-256",
+    "ms": 14.3,
+    "not_after": "2026-10-29T13:32:56+00:00",
+    "lifetime_days": 46,
+    "chain_bytes": 1434,
+    "chain_len": 2,
+    "leaf_sig_alg": "sha256WithRSAEncryption",
+    "posts": 35
+  },
+  {
+    "host": "localhost",
+    "csr_key": "P-256",
+    "ms": 12.9,
+    "not_after": "2026-10-29T13:32:56+00:00",
+    "lifetime_days": 46,
+    "chain_bytes": 1434,
+    "chain_len": 2,
+    "leaf_sig_alg": "sha256WithRSAEncryption",
+    "posts": 40
+  },
+  {
+    "host": "localhost",
+    "csr_key": "P-256",
+    "ms": 13.3,
+    "not_after": "2026-10-29T13:32:56+00:00",
+    "lifetime_days": 46,
+    "chain_bytes": 1434,
+    "chain_len": 2,
+    "leaf_sig_alg": "sha256WithRSAEncryption",
+    "posts": 45
+  },
+  {
+    "host": "localhost",
+    "csr_key": "P-256",
+    "ms": 20.6,
+    "not_after": "2026-10-29T13:32:56+00:00",
+    "lifetime_days": 46,
+    "chain_bytes": 1434,
+    "chain_len": 2,
+    "leaf_sig_alg": "sha256WithRSAEncryption",
+    "posts": 52
+  },
+  {
+    "host": "localhost",
+    "csr_key": "P-256",
+    "ms": 217.1,
+    "not_after": "2026-10-29T13:32:56+00:00",
+    "lifetime_days": 46,
+    "chain_bytes": 1434,
+    "chain_len": 2,
+    "leaf_sig_alg": "sha256WithRSAEncryption",
+    "posts": 58
+  },
+  {
+    "host": "localhost",
+    "csr_key": "P-256",
+    "ms": 224.3,
+    "not_after": "2026-10-29T13:32:57+00:00",
+    "lifetime_days": 46,
+    "chain_bytes": 1434,
+    "chain_len": 2,
+    "leaf_sig_alg": "sha256WithRSAEncryption",
+    "posts": 66
+  },
+  {
+    "host": "localhost",
+    "csr_key": "P-256",
+    "ms": 22.3,
+    "not_after": "2026-10-29T13:32:57+00:00",
+    "lifetime_days": 46,
+    "chain_bytes": 1434,
+    "chain_len": 2,
+    "leaf_sig_alg": "sha256WithRSAEncryption",
+    "posts": 73
+  },
+  {
+    "host": "localhost",
+    "csr_key": "P-256",
+    "ms": 428.4,
+    "not_after": "2026-10-29T13:32:57+00:00",
+    "lifetime_days": 46,
+    "chain_bytes": 1434,
+    "chain_len": 2,
+    "leaf_sig_alg": "sha256WithRSAEncryption",
+    "posts": 82
+  },
+  {
+    "host": "localhost",
+    "csr_key": "P-256",
+    "ms": 218.9,
+    "not_after": "2026-10-29T13:32:57+00:00",
+    "lifetime_days": 46,
+    "chain_bytes": 1434,
+    "chain_len": 2,
+    "leaf_sig_alg": "sha256WithRSAEncryption",
+    "posts": 88
+  },
+  {
+    "host": "localhost",
+    "csr_key": "P-256",
+    "ms": 21.3,
+    "not_after": "2026-10-29T13:32:57+00:00",
+    "lifetime_days": 46,
+    "chain_bytes": 1434,
+    "chain_len": 2,
+    "leaf_sig_alg": "sha256WithRSAEncryption",
+    "posts": 95
+  },
+  {
+    "host": "localhost",
+    "csr_key": "P-256",
+    "ms": 226.1,
+    "not_after": "2026-10-29T13:32:57+00:00",
+    "lifetime_days": 46,
+    "chain_bytes": 1434,
+    "chain_len": 2,
+    "leaf_sig_alg": "sha256WithRSAEncryption",
+    "posts": 103
+  },
+  {
+    "host": "localhost",
+    "csr_key": "P-256",
+    "ms": 229.1,
+    "not_after": "2026-10-29T13:32:58+00:00",
+    "lifetime_days": 46,
+    "chain_bytes": 1434,
+    "chain_len": 2,
+    "leaf_sig_alg": "sha256WithRSAEncryption",
+    "posts": 111
+  },
+  {
+    "host": "localhost",
+    "csr_key": "P-256",
+    "ms": 14.8,
+    "not_after": "2026-10-29T13:32:58+00:00",
+    "lifetime_days": 46,
+    "chain_bytes": 1434,
+    "chain_len": 2,
+    "leaf_sig_alg": "sha256WithRSAEncryption",
+    "posts": 116
+  },
+  {
+    "host": "localhost",
+    "csr_key": "P-256",
+    "ms": 224.7,
+    "not_after": "2026-10-29T13:32:58+00:00",
+    "lifetime_days": 46,
+    "chain_bytes": 1434,
+    "chain_len": 2,
+    "leaf_sig_alg": "sha256WithRSAEncryption",
+    "posts": 124
+  },
+  {
+    "host": "localhost",
+    "csr_key": "P-256",
+    "ms": 15.4,
+    "not_after": "2026-10-29T13:32:58+00:00",
+    "lifetime_days": 46,
+    "chain_bytes": 1434,
+    "chain_len": 2,
+    "leaf_sig_alg": "sha256WithRSAEncryption",
+    "posts": 129
+  },
+  {
+    "host": "localhost",
+    "csr_key": "P-256",
+    "ms": 13.3,
+    "not_after": "2026-10-29T13:32:58+00:00",
+    "lifetime_days": 46,
+    "chain_bytes": 1434,
+    "chain_len": 2,
+    "leaf_sig_alg": "sha256WithRSAEncryption",
+    "posts": 134
+  }
+]

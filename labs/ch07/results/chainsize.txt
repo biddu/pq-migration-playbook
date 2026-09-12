@@ -1,0 +1,35 @@
+ecdsa                  server: server flight 2473 B (2 segments), verified=True
+ecdsa                  mutual: server flight 2606 B (2 segments), verified=True
+mldsa44                server: server flight 12014 B (9 segments), verified=True
+mldsa44                mutual: server flight 12148 B (9 segments), verified=True
+mldsa65                server: server flight 15961 B (11 segments), verified=True
+mldsa65                mutual: server flight 16095 B (12 segments), verified=True
+mldsa87                server: server flight 21195 B (15 segments), verified=True
+mldsa87                mutual: server flight 21329 B (15 segments), verified=True
+pq-under-classical     server: server flight 12720 B (9 segments), verified=True
+pq-under-classical     mutual: server flight 12854 B (9 segments), verified=True
+pq-ca-classical-leaf   server: server flight 10841 B (8 segments), verified=True
+pq-ca-classical-leaf   mutual: server flight 10974 B (8 segments), verified=True
+slh-root               server: server flight 20508 B (15 segments), verified=True
+slh-root               mutual: server flight 20642 B (15 segments), verified=True
+
+profile                                      auth    srv flight B  seg 1 RTT?   c2s B   s2c B verified
+------------------------------------------------------------------------------------------------------
+ecdsa                                        server          2473    2    yes    1497    3007 True
+ecdsa                                        mutual          2606    2    yes    2595    4132 True
+mldsa44                                      server         12014    9    yes    1497   12548 True
+mldsa44                                      mutual         12148    9    yes   12138   20874 True
+mldsa65                                      server         15961   11     NO    1497   16495 True
+mldsa65                                      mutual         16095   12     NO   16085   27861 True
+mldsa87                                      server         21195   15     NO    1497   21729 True
+mldsa87                                      mutual         21329   15     NO   21319   37031 True
+pq-under-classical                           server         12720    9    yes    1497   13254 True
+pq-under-classical                           mutual         12854    9    yes   12844   24620 True
+pq-ca-classical-leaf                         server         10841    8    yes    1497   11375 True
+pq-ca-classical-leaf                         mutual         10974    8    yes   10965   18996 True
+slh-root                                     server         20508   15     NO    1497   21042 True
+slh-root                                     mutual         20642   15     NO   20632   32408 True
+composite MLDSA65-ECDSA-P256-SHA512 (computed) server         16307   12     NO       -       - None
+composite MLDSA44-ECDSA-P256-SHA256 (computed) server         12360    9    yes       -       - None
+
+written /home/claude/pqm_book/labs/ch07/results/chainsize.json

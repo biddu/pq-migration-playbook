@@ -1,0 +1,33 @@
+liboqs-python faulthandler is disabled
+Ed25519                pk    32 B  sig     64 B  sign(4K)     0.05 ms  verify(4K)   0.132 ms
+ECDSA P-256            pk    65 B  sig     71 B  sign(4K)     0.04 ms  verify(4K)   0.084 ms
+RSA-3072               pk   387 B  sig    384 B  sign(4K)     1.88 ms  verify(4K)   0.058 ms
+ML-DSA-44              pk  1312 B  sig   2420 B  sign(4K)     1.01 ms  verify(4K)   0.187 ms
+ML-DSA-65              pk  1952 B  sig   3309 B  sign(4K)     0.88 ms  verify(4K)   0.263 ms
+ML-DSA-87              pk  2592 B  sig   4627 B  sign(4K)     0.70 ms  verify(4K)   0.382 ms
+SLH-DSA-SHA2-128s      pk    32 B  sig   7856 B  sign(4K)   666.24 ms  verify(4K)   0.714 ms
+SLH-DSA-SHA2-128f      pk    32 B  sig  17088 B  sign(4K)    31.77 ms  verify(4K)   2.864 ms
+SLH-DSA-SHA2-192s      pk    48 B  sig  16224 B  sign(4K)  1200.83 ms  verify(4K)   1.019 ms
+SLH-DSA-SHA2-256s      pk    64 B  sig  29792 B  sign(4K)  1065.96 ms  verify(4K)   1.435 ms
+LMS H5/W8              pk    56 B  sig   1292 B  sign(4K)     5.21 ms  verify(4K)   6.097 ms
+LMS H10/W8             pk    56 B  sig   1452 B  sign(4K)     4.95 ms  verify(4K)   5.819 ms
+LMS H10/W4             pk    56 B  sig   2508 B  sign(4K)     0.76 ms  verify(4K)   0.674 ms
+
+scheme                 family              pk B   sig B  keygen ms sign 4K ms verify 4K ms sign 4M ms verify 4M ms  sigs/key
+----------------------------------------------------------------------------------------------------------------------------
+Ed25519                classical             32      64        1.5       0.05        0.132       13.4         6.86 unlimited
+ECDSA P-256            classical             65      71        0.2       0.04        0.084       10.0        10.00 unlimited
+RSA-3072               classical            387     384      575.0       1.88        0.058       11.8         9.94 unlimited
+ML-DSA-44              lattice             1312    2420        6.3       1.01        0.187       12.9        12.43 unlimited
+ML-DSA-65              lattice             1952    3309        0.3       0.88        0.263       13.3        12.38 unlimited
+ML-DSA-87              lattice             2592    4627        0.5       0.70        0.382       13.3        12.64 unlimited
+SLH-DSA-SHA2-128s      hash (stateless)      32    7856       88.3     666.24        0.714      703.2        21.02 unlimited
+SLH-DSA-SHA2-128f      hash (stateless)      32   17088        1.4      31.77        2.864       70.8        21.87 unlimited
+SLH-DSA-SHA2-192s      hash (stateless)      48   16224      127.1    1200.83        1.019     1216.8        15.43 unlimited
+SLH-DSA-SHA2-256s      hash (stateless)      64   29792       83.5    1065.96        1.435     1097.9        15.21 unlimited
+LMS H5/W8              hash (stateful)       56    1292      334.5       5.21        6.097       15.9        15.65        32
+LMS H10/W8             hash (stateful)       56    1452    10870.7       4.95        5.819       15.7        15.76     1,024
+LMS H10/W4             hash (stateful)       56    2508     1339.1       0.76        0.674       11.7        11.46     1,024
+LMS H20/W8 (formula)   hash (stateful)       56    1772        nan        nan          nan        nan          nan 1,048,576
+
+written /home/claude/pqm_book/labs/ch08/results/signbench.json

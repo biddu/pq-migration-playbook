@@ -1,0 +1,19 @@
+built ecdsa                  root EC (8 ms self-sign), issuing EC, leaf EC; server sends 1009 B; openssl OK; python OK (3 certificates)
+built mldsa65                root MLDSA65 (8 ms self-sign), issuing MLDSA65, leaf MLDSA65; server sends 11259 B; openssl OK; python OK (3 certificates)
+built mldsa44                root MLDSA44 (7 ms self-sign), issuing MLDSA44, leaf MLDSA44; server sends 8201 B; openssl OK; python OK (3 certificates)
+built mldsa87                root MLDSA87 (9 ms self-sign), issuing MLDSA87, leaf MLDSA87; server sends 15175 B; openssl OK; python OK (3 certificates)
+built slh-root               root unsupported(UnsupportedAlgorithm) (1133 ms self-sign), issuing MLDSA65, leaf MLDSA65; server sends 15806 B; openssl OK; python VerificationError: validation failed: candidates exhausted: Forbidden public key algorithm: AlgorithmIdentifi
+built pq-under-classical     root EC (7 ms self-sign), issuing MLDSA65, leaf MLDSA65; server sends 8018 B; openssl OK; python OK (3 certificates)
+built pq-ca-classical-leaf   root MLDSA65 (10 ms self-sign), issuing MLDSA65, leaf EC; server sends 9376 B; openssl OK; python OK (3 certificates)
+
+profile                root       issuing    leaf        root B   iss B  leaf B  sent B  CRL0 B  CRL1k B openssl  python
+------------------------------------------------------------------------------------------------------------------------
+ecdsa                  EC         EC         EC             426     467     542    1009     209    21216 OK       OK (3 certificates)
+mldsa65                MLDSA65    MLDSA65    MLDSA65       5551    5592    5667   11259    3452    24458 OK       OK (3 certificates)
+mldsa44                MLDSA44    MLDSA44    MLDSA44       4022    4063    4138    8201    2563    23569 OK       OK (3 certificates)
+mldsa87                MLDSA87    MLDSA87    MLDSA87       7509    7550    7625   15175    4770    25776 OK       OK (3 certificates)
+slh-root               unsupporte MLDSA65    MLDSA65       8174   10139    5667   15806    3452    24458 OK       VerificationError: validation failed: candidates exhausted: Forbidden public key algorithm: AlgorithmIdentifi
+pq-under-classical     EC         MLDSA65    MLDSA65        427    2351    5667    8018    3452    24458 OK       OK (3 certificates)
+pq-ca-classical-leaf   MLDSA65    MLDSA65    EC            5551    5592    3784    9376    3452    24458 OK       OK (3 certificates)
+
+written /home/claude/pqm_book/labs/ch07/results/hierarchies.json

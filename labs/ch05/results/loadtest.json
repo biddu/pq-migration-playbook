@@ -1,0 +1,62 @@
+[
+  {
+    "config": "X25519 / ECDSA",
+    "groups": "X25519",
+    "cert": "ecdsa.crt",
+    "connections": 5243,
+    "real_seconds": 6,
+    "per_second": 873.8333333333334,
+    "mean_ms": 1.1443829868395956,
+    "user_cps": 1985.98
+  },
+  {
+    "config": "X25519MLKEM768 / ECDSA",
+    "groups": "X25519MLKEM768",
+    "cert": "ecdsa.crt",
+    "connections": 5236,
+    "real_seconds": 6,
+    "per_second": 872.6666666666666,
+    "mean_ms": 1.145912910618793,
+    "user_cps": 1837.19
+  },
+  {
+    "config": "X25519 / ML-DSA-65",
+    "groups": "X25519",
+    "cert": "mldsa65.crt",
+    "connections": 2514,
+    "real_seconds": 6,
+    "per_second": 419.0,
+    "mean_ms": 2.386634844868735,
+    "user_cps": 1396.67
+  },
+  {
+    "config": "X25519MLKEM768 / ML-DSA-65",
+    "groups": "X25519MLKEM768",
+    "cert": "mldsa65.crt",
+    "connections": 2466,
+    "real_seconds": 6,
+    "per_second": 411.0,
+    "mean_ms": 2.4330900243309004,
+    "user_cps": 1362.43
+  },
+  {
+    "config": "X25519MLKEM768 / ECDSA chain",
+    "groups": "X25519MLKEM768",
+    "cert": "chain-ecdsa.pem",
+    "connections": 4739,
+    "real_seconds": 6,
+    "per_second": 789.8333333333334,
+    "mean_ms": 1.2660898923823591,
+    "user_cps": 1528.71
+  },
+  {
+    "config": "X25519MLKEM768 / ML-DSA-65 chain",
+    "groups": "X25519MLKEM768",
+    "cert": "chain-mldsa65.pem",
+    "connections": 2227,
+    "real_seconds": 6,
+    "per_second": 371.1666666666667,
+    "mean_ms": 2.694207453973956,
+    "user_cps": 1031.02
+  }
+]

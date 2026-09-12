@@ -1,0 +1,18 @@
+{
+  "pebble": {
+    "listenAddress": "0.0.0.0:14000",
+    "managementListenAddress": "0.0.0.0:15000",
+    "certificate": "labs/ch07/pebble/pebble.minica.pem",
+    "privateKey": "labs/ch07/pebble/pebble.key",
+    "httpPort": 5002,
+    "tlsPort": 5001,
+    "ocspResponderURL": "",
+    "externalAccountBindingRequired": false,
+    "profiles": {
+      "default": {
+        "description": "47-day certificates, the 2029 Baseline Requirements maximum",
+        "validityPeriod": 4060800
+      }
+    }
+  }
+}

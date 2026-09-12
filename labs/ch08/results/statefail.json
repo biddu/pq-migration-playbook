@@ -1,0 +1,36 @@
+{
+  "reuses": 4,
+  "forgery": {
+    "2": {
+      "forged": false,
+      "tries": 1000000,
+      "seconds": 20.4,
+      "expected_tries_uniform_model": 2694384
+    },
+    "3": {
+      "forged": true,
+      "tries": 99432,
+      "seconds": 2.08,
+      "expected_tries_uniform_model": 55679
+    }
+  },
+  "committed_state": {
+    "before_crash": [
+      0,
+      1,
+      2
+    ],
+    "after_restart": [
+      8,
+      9
+    ],
+    "lost": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "remaining": 22
+  }
+}

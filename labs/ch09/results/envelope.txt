@@ -1,0 +1,4 @@
+created 200 objects of 64 KiB under rsa3072 (kek-rsa-2019); header 438 B; 0.1 s
+re-keyed to mlkem768 : header 1208 B (+770); wrote 241,600 header bytes, left 13,112,800 body bytes untouched (1.81% of the store rewritten) in 0.276 s
+re-keyed to xwing    : header 1234 B (+796); wrote 246,800 header bytes, left 13,112,800 body bytes untouched (1.85% of the store rewritten) in 0.075 s
+after shredding: kek-xwing-2026 has been destroyed; nothing wrapped under it can be recovered; the ciphertext is still on disk, 65,564 B per object, and no key exists to read it

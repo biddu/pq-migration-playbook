@@ -1,0 +1,352 @@
+[
+  {
+    "profile": "ecdsa",
+    "root": {
+      "name": "root",
+      "key_alg": "EC",
+      "sig_alg": "ecdsa-with-SHA256",
+      "der_bytes": 426,
+      "public_key_bytes": 65,
+      "signature_bytes": 71,
+      "keygen_ms": 8.1,
+      "sign_ms": 8.1
+    },
+    "issuing": {
+      "name": "issuing",
+      "key_alg": "EC",
+      "sig_alg": "ecdsa-with-SHA256",
+      "der_bytes": 467,
+      "public_key_bytes": 65,
+      "signature_bytes": 71,
+      "keygen_ms": 7.6,
+      "sign_ms": 17.2
+    },
+    "server": {
+      "name": "server",
+      "key_alg": "EC",
+      "sig_alg": "ecdsa-with-SHA256",
+      "der_bytes": 542,
+      "public_key_bytes": 65,
+      "signature_bytes": 71,
+      "keygen_ms": 8.3,
+      "sign_ms": 16.4
+    },
+    "client": {
+      "name": "client",
+      "key_alg": "EC",
+      "sig_alg": "ecdsa-with-SHA256",
+      "der_bytes": 491,
+      "public_key_bytes": 65,
+      "signature_bytes": 70,
+      "keygen_ms": 7.0,
+      "sign_ms": 16.8
+    },
+    "chain_bytes_sent_by_server": 1009,
+    "full_chain_bytes": 1435,
+    "crl_bytes_empty": 209,
+    "crl_bytes_n": 21216,
+    "crl_entries": 1000,
+    "openssl_verify": "OK",
+    "python_verify": "OK (3 certificates)"
+  },
+  {
+    "profile": "mldsa65",
+    "root": {
+      "name": "root",
+      "key_alg": "MLDSA65",
+      "sig_alg": "ML-DSA-65",
+      "der_bytes": 5551,
+      "public_key_bytes": 1952,
+      "signature_bytes": 3309,
+      "keygen_ms": 8.2,
+      "sign_ms": 8.2
+    },
+    "issuing": {
+      "name": "issuing",
+      "key_alg": "MLDSA65",
+      "sig_alg": "ML-DSA-65",
+      "der_bytes": 5592,
+      "public_key_bytes": 1952,
+      "signature_bytes": 3309,
+      "keygen_ms": 8.3,
+      "sign_ms": 17.9
+    },
+    "server": {
+      "name": "server",
+      "key_alg": "MLDSA65",
+      "sig_alg": "ML-DSA-65",
+      "der_bytes": 5667,
+      "public_key_bytes": 1952,
+      "signature_bytes": 3309,
+      "keygen_ms": 7.8,
+      "sign_ms": 18.9
+    },
+    "client": {
+      "name": "client",
+      "key_alg": "MLDSA65",
+      "sig_alg": "ML-DSA-65",
+      "der_bytes": 5617,
+      "public_key_bytes": 1952,
+      "signature_bytes": 3309,
+      "keygen_ms": 8.2,
+      "sign_ms": 17.7
+    },
+    "chain_bytes_sent_by_server": 11259,
+    "full_chain_bytes": 16810,
+    "crl_bytes_empty": 3452,
+    "crl_bytes_n": 24458,
+    "crl_entries": 1000,
+    "openssl_verify": "OK",
+    "python_verify": "OK (3 certificates)"
+  },
+  {
+    "profile": "mldsa44",
+    "root": {
+      "name": "root",
+      "key_alg": "MLDSA44",
+      "sig_alg": "ML-DSA-44",
+      "der_bytes": 4022,
+      "public_key_bytes": 1312,
+      "signature_bytes": 2420,
+      "keygen_ms": 7.4,
+      "sign_ms": 7.4
+    },
+    "issuing": {
+      "name": "issuing",
+      "key_alg": "MLDSA44",
+      "sig_alg": "ML-DSA-44",
+      "der_bytes": 4063,
+      "public_key_bytes": 1312,
+      "signature_bytes": 2420,
+      "keygen_ms": 8.7,
+      "sign_ms": 16.9
+    },
+    "server": {
+      "name": "server",
+      "key_alg": "MLDSA44",
+      "sig_alg": "ML-DSA-44",
+      "der_bytes": 4138,
+      "public_key_bytes": 1312,
+      "signature_bytes": 2420,
+      "keygen_ms": 8.1,
+      "sign_ms": 17.4
+    },
+    "client": {
+      "name": "client",
+      "key_alg": "MLDSA44",
+      "sig_alg": "ML-DSA-44",
+      "der_bytes": 4088,
+      "public_key_bytes": 1312,
+      "signature_bytes": 2420,
+      "keygen_ms": 7.9,
+      "sign_ms": 17.0
+    },
+    "chain_bytes_sent_by_server": 8201,
+    "full_chain_bytes": 12223,
+    "crl_bytes_empty": 2563,
+    "crl_bytes_n": 23569,
+    "crl_entries": 1000,
+    "openssl_verify": "OK",
+    "python_verify": "OK (3 certificates)"
+  },
+  {
+    "profile": "mldsa87",
+    "root": {
+      "name": "root",
+      "key_alg": "MLDSA87",
+      "sig_alg": "ML-DSA-87",
+      "der_bytes": 7509,
+      "public_key_bytes": 2592,
+      "signature_bytes": 4627,
+      "keygen_ms": 9.1,
+      "sign_ms": 9.1
+    },
+    "issuing": {
+      "name": "issuing",
+      "key_alg": "MLDSA87",
+      "sig_alg": "ML-DSA-87",
+      "der_bytes": 7550,
+      "public_key_bytes": 2592,
+      "signature_bytes": 4627,
+      "keygen_ms": 8.8,
+      "sign_ms": 18.6
+    },
+    "server": {
+      "name": "server",
+      "key_alg": "MLDSA87",
+      "sig_alg": "ML-DSA-87",
+      "der_bytes": 7625,
+      "public_key_bytes": 2592,
+      "signature_bytes": 4627,
+      "keygen_ms": 8.3,
+      "sign_ms": 18.4
+    },
+    "client": {
+      "name": "client",
+      "key_alg": "MLDSA87",
+      "sig_alg": "ML-DSA-87",
+      "der_bytes": 7575,
+      "public_key_bytes": 2592,
+      "signature_bytes": 4627,
+      "keygen_ms": 8.7,
+      "sign_ms": 19.7
+    },
+    "chain_bytes_sent_by_server": 15175,
+    "full_chain_bytes": 22684,
+    "crl_bytes_empty": 4770,
+    "crl_bytes_n": 25776,
+    "crl_entries": 1000,
+    "openssl_verify": "OK",
+    "python_verify": "OK (3 certificates)"
+  },
+  {
+    "profile": "slh-root",
+    "root": {
+      "name": "root",
+      "key_alg": "unsupported(UnsupportedAlgorithm)",
+      "sig_alg": "2.16.840.1.101.3.4.3.20",
+      "der_bytes": 8174,
+      "public_key_bytes": -1,
+      "signature_bytes": 7856,
+      "keygen_ms": 1133.1,
+      "sign_ms": 1133.1
+    },
+    "issuing": {
+      "name": "issuing",
+      "key_alg": "MLDSA65",
+      "sig_alg": "2.16.840.1.101.3.4.3.20",
+      "der_bytes": 10139,
+      "public_key_bytes": 1952,
+      "signature_bytes": 7856,
+      "keygen_ms": 7.9,
+      "sign_ms": 1014.5
+    },
+    "server": {
+      "name": "server",
+      "key_alg": "MLDSA65",
+      "sig_alg": "ML-DSA-65",
+      "der_bytes": 5667,
+      "public_key_bytes": 1952,
+      "signature_bytes": 3309,
+      "keygen_ms": 8.2,
+      "sign_ms": 21.5
+    },
+    "client": {
+      "name": "client",
+      "key_alg": "MLDSA65",
+      "sig_alg": "ML-DSA-65",
+      "der_bytes": 5617,
+      "public_key_bytes": 1952,
+      "signature_bytes": 3309,
+      "keygen_ms": 7.8,
+      "sign_ms": 18.5
+    },
+    "chain_bytes_sent_by_server": 15806,
+    "full_chain_bytes": 23980,
+    "crl_bytes_empty": 3452,
+    "crl_bytes_n": 24458,
+    "crl_entries": 1000,
+    "openssl_verify": "OK",
+    "python_verify": "VerificationError: validation failed: candidates exhausted: Forbidden public key algorithm: AlgorithmIdentifi"
+  },
+  {
+    "profile": "pq-under-classical",
+    "root": {
+      "name": "root",
+      "key_alg": "EC",
+      "sig_alg": "ecdsa-with-SHA256",
+      "der_bytes": 427,
+      "public_key_bytes": 65,
+      "signature_bytes": 72,
+      "keygen_ms": 6.8,
+      "sign_ms": 6.8
+    },
+    "issuing": {
+      "name": "issuing",
+      "key_alg": "MLDSA65",
+      "sig_alg": "ecdsa-with-SHA256",
+      "der_bytes": 2351,
+      "public_key_bytes": 1952,
+      "signature_bytes": 72,
+      "keygen_ms": 7.3,
+      "sign_ms": 16.0
+    },
+    "server": {
+      "name": "server",
+      "key_alg": "MLDSA65",
+      "sig_alg": "ML-DSA-65",
+      "der_bytes": 5667,
+      "public_key_bytes": 1952,
+      "signature_bytes": 3309,
+      "keygen_ms": 10.9,
+      "sign_ms": 18.4
+    },
+    "client": {
+      "name": "client",
+      "key_alg": "MLDSA65",
+      "sig_alg": "ML-DSA-65",
+      "der_bytes": 5617,
+      "public_key_bytes": 1952,
+      "signature_bytes": 3309,
+      "keygen_ms": 7.5,
+      "sign_ms": 18.5
+    },
+    "chain_bytes_sent_by_server": 8018,
+    "full_chain_bytes": 8445,
+    "crl_bytes_empty": 3452,
+    "crl_bytes_n": 24458,
+    "crl_entries": 1000,
+    "openssl_verify": "OK",
+    "python_verify": "OK (3 certificates)"
+  },
+  {
+    "profile": "pq-ca-classical-leaf",
+    "root": {
+      "name": "root",
+      "key_alg": "MLDSA65",
+      "sig_alg": "ML-DSA-65",
+      "der_bytes": 5551,
+      "public_key_bytes": 1952,
+      "signature_bytes": 3309,
+      "keygen_ms": 10.2,
+      "sign_ms": 10.2
+    },
+    "issuing": {
+      "name": "issuing",
+      "key_alg": "MLDSA65",
+      "sig_alg": "ML-DSA-65",
+      "der_bytes": 5592,
+      "public_key_bytes": 1952,
+      "signature_bytes": 3309,
+      "keygen_ms": 8.4,
+      "sign_ms": 19.2
+    },
+    "server": {
+      "name": "server",
+      "key_alg": "EC",
+      "sig_alg": "ML-DSA-65",
+      "der_bytes": 3784,
+      "public_key_bytes": 65,
+      "signature_bytes": 3309,
+      "keygen_ms": 7.1,
+      "sign_ms": 19.2
+    },
+    "client": {
+      "name": "client",
+      "key_alg": "EC",
+      "sig_alg": "ML-DSA-65",
+      "der_bytes": 3734,
+      "public_key_bytes": 65,
+      "signature_bytes": 3309,
+      "keygen_ms": 7.4,
+      "sign_ms": 18.3
+    },
+    "chain_bytes_sent_by_server": 9376,
+    "full_chain_bytes": 14927,
+    "crl_bytes_empty": 3452,
+    "crl_bytes_n": 24458,
+    "crl_entries": 1000,
+    "openssl_verify": "OK",
+    "python_verify": "OK (3 certificates)"
+  }
+]
