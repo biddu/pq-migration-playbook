@@ -1,0 +1,34 @@
+MLKEM768               pyssl <- go      UNSUPPORTED                  CH -
+MLKEM768               pyssl <- pyssl   OK X25519                    CH 250
+
+X25519
+server / client                openssl                  go               pyssl
+openssl                             OK                  OK                  OK
+go                                  OK                  OK                  OK
+pyssl                               OK                  OK                  OK
+
+X25519MLKEM768
+server / client                openssl                  go               pyssl
+openssl                             OK                  OK                FAIL
+go                                  OK                  OK                FAIL
+pyssl                             FAIL                FAIL          OK(X25519)
+
+SecP256r1MLKEM768
+server / client                openssl                  go               pyssl
+openssl                             OK                 n/s                FAIL
+go                                 n/s                 n/s                 n/s
+pyssl                             FAIL                 n/s          OK(X25519)
+
+SecP384r1MLKEM1024
+server / client                openssl                  go               pyssl
+openssl                             OK                 n/s                FAIL
+go                                 n/s                 n/s                 n/s
+pyssl                             FAIL                 n/s          OK(X25519)
+
+MLKEM768
+server / client                openssl                  go               pyssl
+openssl                             OK                 n/s                FAIL
+go                                 n/s                 n/s                 n/s
+pyssl                             FAIL                 n/s          OK(X25519)
+
+written /home/claude/pqm_book/labs/ch12/results/interop.json  (n/s = cannot be configured for that group; OK(g) = handshake completed but negotiated g instead)

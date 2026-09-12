@@ -1,0 +1,6 @@
+target                                  median A ns  median B ns        t  verdict
+toy FO, leaky rejection                        5968        21160  -186.83  LEAK (|t| > 4.5)
+toy FO, constant-time                          9111         9113     0.56  no leak found at this n
+early-exit compare                             1001          309   759.26  LEAK (|t| > 4.5)
+hmac.compare_digest                             141          141     1.99  no leak found at this n
+cryptography ML-KEM-768 decapsulate           35595        35598     2.72  no leak found at this n

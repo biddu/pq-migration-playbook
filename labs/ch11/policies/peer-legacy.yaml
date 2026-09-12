@@ -1,0 +1,5 @@
+version: 1
+kem: {preferred: [X25519], allowed: [X25519], floor: 0}
+sig: {preferred: [Ed25519], allowed: [Ed25519], floor: 0}
+deprecations: {}
+kill_switch: []

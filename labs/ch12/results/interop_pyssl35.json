@@ -1,0 +1,412 @@
+{
+  "pyssl_openssl": "3.5.4",
+  "go": "1.24",
+  "openssl_bin": "/opt/openssl35/bin/openssl",
+  "rows": [
+    {
+      "server": "openssl",
+      "client": "openssl",
+      "group": "X25519",
+      "status": "OK",
+      "detail": "",
+      "negotiated": "X25519",
+      "client_hello_bytes": 242,
+      "hrr": false
+    },
+    {
+      "server": "openssl",
+      "client": "go",
+      "group": "X25519",
+      "status": "OK",
+      "detail": "",
+      "negotiated": "X25519",
+      "client_hello_bytes": 228,
+      "hrr": false
+    },
+    {
+      "server": "openssl",
+      "client": "pyssl",
+      "group": "X25519",
+      "status": "OK",
+      "detail": "library default (OpenSSL 3.5.4); pyssl uses libssl defaults (OpenSSL 3.5.4); requested group not enforceable",
+      "negotiated": "X25519",
+      "client_hello_bytes": 1476,
+      "hrr": false
+    },
+    {
+      "server": "go",
+      "client": "openssl",
+      "group": "X25519",
+      "status": "OK",
+      "detail": "",
+      "negotiated": "X25519",
+      "client_hello_bytes": 242,
+      "hrr": false
+    },
+    {
+      "server": "go",
+      "client": "go",
+      "group": "X25519",
+      "status": "OK",
+      "detail": "",
+      "negotiated": "X25519",
+      "client_hello_bytes": 228,
+      "hrr": false
+    },
+    {
+      "server": "go",
+      "client": "pyssl",
+      "group": "X25519",
+      "status": "OK",
+      "detail": "library default (OpenSSL 3.5.4); pyssl uses libssl defaults (OpenSSL 3.5.4); requested group not enforceable",
+      "negotiated": "X25519",
+      "client_hello_bytes": 1476,
+      "hrr": false
+    },
+    {
+      "server": "pyssl",
+      "client": "openssl",
+      "group": "X25519",
+      "status": "OK",
+      "detail": "pyssl uses libssl defaults (OpenSSL 3.5.4); requested group not enforceable",
+      "negotiated": "X25519",
+      "client_hello_bytes": 242,
+      "hrr": false
+    },
+    {
+      "server": "pyssl",
+      "client": "go",
+      "group": "X25519",
+      "status": "OK",
+      "detail": "pyssl uses libssl defaults (OpenSSL 3.5.4); requested group not enforceable",
+      "negotiated": "X25519",
+      "client_hello_bytes": 228,
+      "hrr": false
+    },
+    {
+      "server": "pyssl",
+      "client": "pyssl",
+      "group": "X25519",
+      "status": "OK",
+      "detail": "library default (OpenSSL 3.5.4); pyssl uses libssl defaults (OpenSSL 3.5.4); requested group not enforceable",
+      "negotiated": "X25519MLKEM768",
+      "client_hello_bytes": 1476,
+      "hrr": false
+    },
+    {
+      "server": "openssl",
+      "client": "openssl",
+      "group": "X25519MLKEM768",
+      "status": "OK",
+      "detail": "",
+      "negotiated": "X25519MLKEM768",
+      "client_hello_bytes": 1418,
+      "hrr": false
+    },
+    {
+      "server": "openssl",
+      "client": "go",
+      "group": "X25519MLKEM768",
+      "status": "OK",
+      "detail": "",
+      "negotiated": "X25519MLKEM768",
+      "client_hello_bytes": 1412,
+      "hrr": false
+    },
+    {
+      "server": "openssl",
+      "client": "pyssl",
+      "group": "X25519MLKEM768",
+      "status": "OK",
+      "detail": "library default (OpenSSL 3.5.4); pyssl uses libssl defaults (OpenSSL 3.5.4); requested group not enforceable",
+      "negotiated": "X25519MLKEM768",
+      "client_hello_bytes": 1476,
+      "hrr": false
+    },
+    {
+      "server": "go",
+      "client": "openssl",
+      "group": "X25519MLKEM768",
+      "status": "OK",
+      "detail": "",
+      "negotiated": "X25519MLKEM768",
+      "client_hello_bytes": 1418,
+      "hrr": false
+    },
+    {
+      "server": "go",
+      "client": "go",
+      "group": "X25519MLKEM768",
+      "status": "OK",
+      "detail": "",
+      "negotiated": "X25519MLKEM768",
+      "client_hello_bytes": 1412,
+      "hrr": false
+    },
+    {
+      "server": "go",
+      "client": "pyssl",
+      "group": "X25519MLKEM768",
+      "status": "OK",
+      "detail": "library default (OpenSSL 3.5.4); pyssl uses libssl defaults (OpenSSL 3.5.4); requested group not enforceable",
+      "negotiated": "X25519MLKEM768",
+      "client_hello_bytes": 1476,
+      "hrr": false
+    },
+    {
+      "server": "pyssl",
+      "client": "openssl",
+      "group": "X25519MLKEM768",
+      "status": "OK",
+      "detail": "pyssl uses libssl defaults (OpenSSL 3.5.4); requested group not enforceable",
+      "negotiated": "X25519MLKEM768",
+      "client_hello_bytes": 1418,
+      "hrr": false
+    },
+    {
+      "server": "pyssl",
+      "client": "go",
+      "group": "X25519MLKEM768",
+      "status": "OK",
+      "detail": "pyssl uses libssl defaults (OpenSSL 3.5.4); requested group not enforceable",
+      "negotiated": "X25519MLKEM768",
+      "client_hello_bytes": 1412,
+      "hrr": false
+    },
+    {
+      "server": "pyssl",
+      "client": "pyssl",
+      "group": "X25519MLKEM768",
+      "status": "OK",
+      "detail": "library default (OpenSSL 3.5.4); pyssl uses libssl defaults (OpenSSL 3.5.4); requested group not enforceable",
+      "negotiated": "X25519MLKEM768",
+      "client_hello_bytes": 1476,
+      "hrr": false
+    },
+    {
+      "server": "openssl",
+      "client": "openssl",
+      "group": "SecP256r1MLKEM768",
+      "status": "OK",
+      "detail": "",
+      "negotiated": "SecP256r1MLKEM768",
+      "client_hello_bytes": 1451,
+      "hrr": false
+    },
+    {
+      "server": "openssl",
+      "client": "go",
+      "group": "SecP256r1MLKEM768",
+      "status": "UNSUPPORTED",
+      "detail": "go cannot offer SecP256r1MLKEM768"
+    },
+    {
+      "server": "openssl",
+      "client": "pyssl",
+      "group": "SecP256r1MLKEM768",
+      "status": "FAIL",
+      "detail": "SSLV3_ALERT_HANDSHAKE_FAILURE; pyssl uses libssl defaults (OpenSSL 3.5.4); requested group not enforceable",
+      "negotiated": "",
+      "client_hello_bytes": 1476,
+      "hrr": false
+    },
+    {
+      "server": "go",
+      "client": "openssl",
+      "group": "SecP256r1MLKEM768",
+      "status": "UNSUPPORTED",
+      "detail": "go cannot serve SecP256r1MLKEM768"
+    },
+    {
+      "server": "go",
+      "client": "go",
+      "group": "SecP256r1MLKEM768",
+      "status": "UNSUPPORTED",
+      "detail": "go cannot offer SecP256r1MLKEM768"
+    },
+    {
+      "server": "go",
+      "client": "pyssl",
+      "group": "SecP256r1MLKEM768",
+      "status": "UNSUPPORTED",
+      "detail": "go cannot serve SecP256r1MLKEM768"
+    },
+    {
+      "server": "pyssl",
+      "client": "openssl",
+      "group": "SecP256r1MLKEM768",
+      "status": "FAIL",
+      "detail": "80DBA0D9027F0000:error:0A000410:SSL routines:ssl3_read_bytes:ssl/tls alert handshake failure:ssl/record/rec_layer_s3.c:916:SSL alert number 40; pyssl uses libssl defaults (OpenSSL 3.5.4); requested group not enforceable",
+      "negotiated": "",
+      "client_hello_bytes": 1451,
+      "hrr": false
+    },
+    {
+      "server": "pyssl",
+      "client": "go",
+      "group": "SecP256r1MLKEM768",
+      "status": "UNSUPPORTED",
+      "detail": "go cannot offer SecP256r1MLKEM768"
+    },
+    {
+      "server": "pyssl",
+      "client": "pyssl",
+      "group": "SecP256r1MLKEM768",
+      "status": "OK",
+      "detail": "library default (OpenSSL 3.5.4); pyssl uses libssl defaults (OpenSSL 3.5.4); requested group not enforceable",
+      "negotiated": "X25519MLKEM768",
+      "client_hello_bytes": 1476,
+      "hrr": false
+    },
+    {
+      "server": "openssl",
+      "client": "openssl",
+      "group": "SecP384r1MLKEM1024",
+      "status": "OK",
+      "detail": "",
+      "negotiated": "SecP384r1MLKEM1024",
+      "client_hello_bytes": 1867,
+      "hrr": false
+    },
+    {
+      "server": "openssl",
+      "client": "go",
+      "group": "SecP384r1MLKEM1024",
+      "status": "UNSUPPORTED",
+      "detail": "go cannot offer SecP384r1MLKEM1024"
+    },
+    {
+      "server": "openssl",
+      "client": "pyssl",
+      "group": "SecP384r1MLKEM1024",
+      "status": "FAIL",
+      "detail": "SSLV3_ALERT_HANDSHAKE_FAILURE; pyssl uses libssl defaults (OpenSSL 3.5.4); requested group not enforceable",
+      "negotiated": "",
+      "client_hello_bytes": 1476,
+      "hrr": false
+    },
+    {
+      "server": "go",
+      "client": "openssl",
+      "group": "SecP384r1MLKEM1024",
+      "status": "UNSUPPORTED",
+      "detail": "go cannot serve SecP384r1MLKEM1024"
+    },
+    {
+      "server": "go",
+      "client": "go",
+      "group": "SecP384r1MLKEM1024",
+      "status": "UNSUPPORTED",
+      "detail": "go cannot offer SecP384r1MLKEM1024"
+    },
+    {
+      "server": "go",
+      "client": "pyssl",
+      "group": "SecP384r1MLKEM1024",
+      "status": "UNSUPPORTED",
+      "detail": "go cannot serve SecP384r1MLKEM1024"
+    },
+    {
+      "server": "pyssl",
+      "client": "openssl",
+      "group": "SecP384r1MLKEM1024",
+      "status": "FAIL",
+      "detail": "807B16609D7F0000:error:0A000410:SSL routines:ssl3_read_bytes:ssl/tls alert handshake failure:ssl/record/rec_layer_s3.c:916:SSL alert number 40; pyssl uses libssl defaults (OpenSSL 3.5.4); requested group not enforceable",
+      "negotiated": "",
+      "client_hello_bytes": 1867,
+      "hrr": false
+    },
+    {
+      "server": "pyssl",
+      "client": "go",
+      "group": "SecP384r1MLKEM1024",
+      "status": "UNSUPPORTED",
+      "detail": "go cannot offer SecP384r1MLKEM1024"
+    },
+    {
+      "server": "pyssl",
+      "client": "pyssl",
+      "group": "SecP384r1MLKEM1024",
+      "status": "OK",
+      "detail": "library default (OpenSSL 3.5.4); pyssl uses libssl defaults (OpenSSL 3.5.4); requested group not enforceable",
+      "negotiated": "X25519MLKEM768",
+      "client_hello_bytes": 1476,
+      "hrr": false
+    },
+    {
+      "server": "openssl",
+      "client": "openssl",
+      "group": "MLKEM768",
+      "status": "OK",
+      "detail": "",
+      "negotiated": "MLKEM768",
+      "client_hello_bytes": 1386,
+      "hrr": false
+    },
+    {
+      "server": "openssl",
+      "client": "go",
+      "group": "MLKEM768",
+      "status": "UNSUPPORTED",
+      "detail": "go cannot offer MLKEM768"
+    },
+    {
+      "server": "openssl",
+      "client": "pyssl",
+      "group": "MLKEM768",
+      "status": "FAIL",
+      "detail": "SSLV3_ALERT_HANDSHAKE_FAILURE; pyssl uses libssl defaults (OpenSSL 3.5.4); requested group not enforceable",
+      "negotiated": "",
+      "client_hello_bytes": 1476,
+      "hrr": false
+    },
+    {
+      "server": "go",
+      "client": "openssl",
+      "group": "MLKEM768",
+      "status": "UNSUPPORTED",
+      "detail": "go cannot serve MLKEM768"
+    },
+    {
+      "server": "go",
+      "client": "go",
+      "group": "MLKEM768",
+      "status": "UNSUPPORTED",
+      "detail": "go cannot offer MLKEM768"
+    },
+    {
+      "server": "go",
+      "client": "pyssl",
+      "group": "MLKEM768",
+      "status": "UNSUPPORTED",
+      "detail": "go cannot serve MLKEM768"
+    },
+    {
+      "server": "pyssl",
+      "client": "openssl",
+      "group": "MLKEM768",
+      "status": "FAIL",
+      "detail": "804B66F0D37F0000:error:0A000410:SSL routines:ssl3_read_bytes:ssl/tls alert handshake failure:ssl/record/rec_layer_s3.c:916:SSL alert number 40; pyssl uses libssl defaults (OpenSSL 3.5.4); requested group not enforceable",
+      "negotiated": "",
+      "client_hello_bytes": 1386,
+      "hrr": false
+    },
+    {
+      "server": "pyssl",
+      "client": "go",
+      "group": "MLKEM768",
+      "status": "UNSUPPORTED",
+      "detail": "go cannot offer MLKEM768"
+    },
+    {
+      "server": "pyssl",
+      "client": "pyssl",
+      "group": "MLKEM768",
+      "status": "OK",
+      "detail": "library default (OpenSSL 3.5.4); pyssl uses libssl defaults (OpenSSL 3.5.4); requested group not enforceable",
+      "negotiated": "X25519MLKEM768",
+      "client_hello_bytes": 1476,
+      "hrr": false
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "ts": "2026-09-12T17:07:52+00:00",
+    "kind": "kem",
+    "policy_version": 3,
+    "policy_digest": "c655bb0c0af07d6e",
+    "our_usable": [
+      "X-Wing",
+      "ML-KEM-768",
+      "X25519"
+    ],
+    "peer_offer": [
+      "X-Wing",
+      "ML-KEM-768",
+      "X25519"
+    ],
+    "chosen": "X-Wing",
+    "quantum_level": 3,
+    "downgrade": false,
+    "warned": false,
+    "reason": "ok"
+  },
+  {
+    "ts": "2026-09-12T17:07:52+00:00",
+    "kind": "sig",
+    "policy_version": 3,
+    "policy_digest": "c655bb0c0af07d6e",
+    "our_usable": [
+      "ML-DSA-65",
+      "Ed25519"
+    ],
+    "peer_offer": [
+      "ML-DSA-65",
+      "Ed25519"
+    ],
+    "chosen": "ML-DSA-65",
+    "quantum_level": 3,
+    "downgrade": false,
+    "warned": false,
+    "reason": "ok"
+  }
+]

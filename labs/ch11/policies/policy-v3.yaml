@@ -1,0 +1,30 @@
+# Cryptographic policy for the running example (PQM Payments), version 3.
+# This file is the only place an algorithm choice lives. Code reads it; nobody edits code to change it.
+version: 3
+effective_from: 2026-09-01
+owner: platform-security@pqm.example
+
+kem:
+  # Preference order; the first algorithm both sides allow wins (client order, like SSH, so that the
+  # policy of the initiating side decides and the outcome is predictable from one file).
+  preferred: [X-Wing, ML-KEM-768, X25519]
+  allowed:   [X-Wing, ML-KEM-768, X25519]
+  # Minimum NIST quantum security level the negotiated KEM must have. 0 permits classical fallback
+  # (the transition state); 1 or more forbids it (the "remove the old path" state, Chapter 4).
+  floor: 0
+
+sig:
+  preferred: [ML-DSA-65, Ed25519]
+  allowed:   [ML-DSA-65, Ed25519]
+  floor: 0
+
+# Deprecations are dates, not code changes. warn_after: telemetry flags every use. disallow_after:
+# the algorithm is treated as absent from `allowed` from that date, whatever the peer offers.
+deprecations:
+  X25519:  {warn_after: 2028-01-01, disallow_after: 2030-12-31}
+  Ed25519: {warn_after: 2029-01-01, disallow_after: 2031-12-31}
+
+# The kill switch. An algorithm named here is disabled immediately and unconditionally, ahead of
+# every other rule. Adding a name is the rollback path for a bad algorithm; removing it is the
+# roll-forward. Both are one-line edits, and both are rehearsed (Lab 11.2).
+kill_switch: []

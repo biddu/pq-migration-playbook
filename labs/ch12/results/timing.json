@@ -1,0 +1,42 @@
+[
+  {
+    "target": "toy FO, leaky rejection",
+    "n_per_class": 4000,
+    "median_a_ns": 5968.0,
+    "median_b_ns": 21160.0,
+    "t": -186.83,
+    "leak": true
+  },
+  {
+    "target": "toy FO, constant-time",
+    "n_per_class": 4000,
+    "median_a_ns": 9111.0,
+    "median_b_ns": 9113.0,
+    "t": 0.56,
+    "leak": false
+  },
+  {
+    "target": "early-exit compare",
+    "n_per_class": 4000,
+    "median_a_ns": 1001.0,
+    "median_b_ns": 309.0,
+    "t": 759.26,
+    "leak": true
+  },
+  {
+    "target": "hmac.compare_digest",
+    "n_per_class": 4000,
+    "median_a_ns": 141.0,
+    "median_b_ns": 141.0,
+    "t": 1.99,
+    "leak": false
+  },
+  {
+    "target": "cryptography ML-KEM-768 decapsulate",
+    "n_per_class": 4000,
+    "median_a_ns": 35595.0,
+    "median_b_ns": 35598.5,
+    "t": 2.72,
+    "leak": false
+  }
+]

@@ -1,0 +1,217 @@
+[
+  {
+    "section": "1 correctness",
+    "check": "ch01 acceptance tests",
+    "status": "PASS",
+    "detail": "9 passed",
+    "seconds": 0.6
+  },
+  {
+    "section": "1 correctness",
+    "check": "ch02 acceptance tests",
+    "status": "PASS",
+    "detail": "16 passed",
+    "seconds": 18.8
+  },
+  {
+    "section": "1 correctness",
+    "check": "ch03 acceptance tests",
+    "status": "PASS",
+    "detail": "10 passed",
+    "seconds": 0.6
+  },
+  {
+    "section": "1 correctness",
+    "check": "ch04 acceptance tests",
+    "status": "PASS",
+    "detail": "6 passed",
+    "seconds": 0.6
+  },
+  {
+    "section": "1 correctness",
+    "check": "ch05 acceptance tests",
+    "status": "PASS",
+    "detail": "6 passed",
+    "seconds": 1.0
+  },
+  {
+    "section": "1 correctness",
+    "check": "ch06 acceptance tests",
+    "status": "PASS",
+    "detail": "8 passed",
+    "seconds": 1.8
+  },
+  {
+    "section": "1 correctness",
+    "check": "ch07 acceptance tests",
+    "status": "PASS",
+    "detail": "9 passed, 1 skipped",
+    "seconds": 2.5
+  },
+  {
+    "section": "1 correctness",
+    "check": "ch08 acceptance tests",
+    "status": "PASS",
+    "detail": "10 passed",
+    "seconds": 3.1
+  },
+  {
+    "section": "1 correctness",
+    "check": "ch09 acceptance tests",
+    "status": "PASS",
+    "detail": "15 passed",
+    "seconds": 0.7
+  },
+  {
+    "section": "1 correctness",
+    "check": "ch10 acceptance tests",
+    "status": "PASS",
+    "detail": "9 passed",
+    "seconds": 0.9
+  },
+  {
+    "section": "1 correctness",
+    "check": "ch11 acceptance tests",
+    "status": "PASS",
+    "detail": "9 passed",
+    "seconds": 5.4
+  },
+  {
+    "section": "2 known-answer",
+    "check": "RFC 8554 Test Case 1 verifies (LMS/HSS)",
+    "status": "PASS",
+    "detail": "1 passed"
+  },
+  {
+    "section": "2 known-answer",
+    "check": "X-Wing keygen matches draft vector",
+    "status": "PASS",
+    "detail": "1 passed"
+  },
+  {
+    "section": "2 known-answer",
+    "check": "X-Wing decapsulation matches draft vector",
+    "status": "PASS",
+    "detail": "1 passed"
+  },
+  {
+    "section": "2 known-answer",
+    "check": "FIPS 204 ML-DSA-65 sizes",
+    "status": "PASS",
+    "detail": "1 passed"
+  },
+  {
+    "section": "2 known-answer",
+    "check": "CAVP/ACVP vectors for the production library",
+    "status": "MANUAL",
+    "detail": "attach the CAVP certificate numbers or ACVP run for the library versions in the CBOM (plan section 2.3)"
+  },
+  {
+    "section": "3 interoperability",
+    "check": "openssl server <- openssl client, X25519MLKEM768",
+    "status": "PASS",
+    "detail": "negotiated X25519MLKEM768, ClientHello 1418 B"
+  },
+  {
+    "section": "3 interoperability",
+    "check": "openssl server <- go client, X25519MLKEM768",
+    "status": "PASS",
+    "detail": "negotiated X25519MLKEM768, ClientHello 1412 B"
+  },
+  {
+    "section": "3 interoperability",
+    "check": "go server <- openssl client, X25519MLKEM768",
+    "status": "PASS",
+    "detail": "negotiated X25519MLKEM768, ClientHello 1418 B"
+  },
+  {
+    "section": "3 interoperability",
+    "check": "go server <- go client, X25519MLKEM768",
+    "status": "PASS",
+    "detail": "negotiated X25519MLKEM768, ClientHello 1412 B"
+  },
+  {
+    "section": "3 interoperability",
+    "check": "known gaps are known",
+    "status": "INFO",
+    "detail": "15 cells not configurable, 10 handshake failures; pyssl on OpenSSL 3.0.13 (no post-quantum groups)"
+  },
+  {
+    "section": "4 side channels",
+    "check": "toy FO, leaky rejection",
+    "status": "PASS",
+    "detail": "t = -186.83, leak (expected); detector sanity check"
+  },
+  {
+    "section": "4 side channels",
+    "check": "toy FO, constant-time",
+    "status": "PASS",
+    "detail": "t = 0.56, no leak (expected); detector sanity check"
+  },
+  {
+    "section": "4 side channels",
+    "check": "early-exit compare",
+    "status": "PASS",
+    "detail": "t = 759.26, leak (expected); detector sanity check"
+  },
+  {
+    "section": "4 side channels",
+    "check": "hmac.compare_digest",
+    "status": "PASS",
+    "detail": "t = 1.99, no leak (expected); library under test"
+  },
+  {
+    "section": "4 side channels",
+    "check": "cryptography ML-KEM-768 decapsulate",
+    "status": "PASS",
+    "detail": "t = 2.72, no leak (expected); library under test"
+  },
+  {
+    "section": "4 side channels",
+    "check": "constant-time claims of the production library",
+    "status": "MANUAL",
+    "detail": "the detector cannot prove absence; attach the vendor's/library's constant-time statement and CAVP/CMVP status (plan 4.2)"
+  },
+  {
+    "section": "5 performance",
+    "check": "hybrid KEX handshake time ratio",
+    "status": "PASS",
+    "detail": "1.00x vs budget 1.1x (Lab 5.3)"
+  },
+  {
+    "section": "5 performance",
+    "check": "ML-DSA-65 certificate handshake time ratio",
+    "status": "PASS",
+    "detail": "2.09x vs budget 2.5x (Lab 5.3)"
+  },
+  {
+    "section": "5 performance",
+    "check": "ML-DSA-65 verify on 4 MiB vs Ed25519",
+    "status": "PASS",
+    "detail": "1.80x vs budget 2.5x (Lab 8.1)"
+  },
+  {
+    "section": "5 performance",
+    "check": "production p99 handshake latency on the canary",
+    "status": "MANUAL",
+    "detail": "measure on the real path; the loopback ratios above do not include the extra round trip (plan 5.2)"
+  },
+  {
+    "section": "6 agility",
+    "check": "kill-switch drill",
+    "status": "PASS",
+    "detail": "telemetry events: 300, downgrades flagged: 0, drill PASSED"
+  },
+  {
+    "section": "7 rollback",
+    "check": "rollback restored policy digest and choices",
+    "status": "PASS",
+    "detail": "0.141 s; 0 downgrades flagged during drill"
+  },
+  {
+    "section": "7 rollback",
+    "check": "production rollback rehearsed within the last quarter",
+    "status": "MANUAL",
+    "detail": "date and duration of the last rehearsal against production configuration (runbook section R3)"
+  }
+]

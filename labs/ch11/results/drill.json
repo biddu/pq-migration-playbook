@@ -1,0 +1,33 @@
+{
+  "steps": [
+    {
+      "step": "baseline",
+      "version": 3,
+      "choices": {
+        "X-Wing+ML-DSA-65": 50
+      },
+      "seconds": 0.138
+    },
+    {
+      "step": "kill X-Wing",
+      "version": 4,
+      "choices": {
+        "ML-KEM-768+ML-DSA-65": 50
+      },
+      "victim_absent": true,
+      "seconds": 0.106
+    },
+    {
+      "step": "rollback",
+      "version": 3,
+      "choices": {
+        "X-Wing+ML-DSA-65": 50
+      },
+      "restored": true,
+      "seconds": 0.141
+    }
+  ],
+  "telemetry_events": 300,
+  "downgrades_flagged": 0,
+  "passed": true
+}

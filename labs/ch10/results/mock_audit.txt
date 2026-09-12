@@ -1,0 +1,8 @@
+module      : mock
+library     : PQM Labs (mock) / Mock PKCS#11 3.2 token v3.2, Cryptoki 3.2
+token       : 'mock-pq', firmware 1.0
+mechanisms  : 17
+post-quantum: CKM_ML_KEM_KEY_PAIR_GEN[GENERATE_KEY_PAIR], CKM_ML_KEM[ENCAPSULATE|DECAPSULATE], CKM_ML_DSA_KEY_PAIR_GEN[GENERATE_KEY_PAIR], CKM_ML_DSA[SIGN|VERIFY], CKM_HASH_ML_DSA_SHA512[SIGN|VERIFY], CKM_SLH_DSA_KEY_PAIR_GEN[GENERATE_KEY_PAIR], CKM_SLH_DSA[SIGN|VERIFY], CKM_HSS_KEY_PAIR_GEN[GENERATE_KEY_PAIR], CKM_HSS[SIGN|VERIFY]
+required    : all present
+recommended : all present
+verdict     : READY: all required post-quantum mechanisms present with the right capabilities

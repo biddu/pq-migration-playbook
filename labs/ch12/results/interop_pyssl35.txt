@@ -1,0 +1,31 @@
+pyssl on OpenSSL 3.5.4
+
+X25519
+server / client                openssl                  go               pyssl
+openssl                             OK                  OK                  OK
+go                                  OK                  OK                  OK
+pyssl                               OK                  OK  OK(X25519MLKEM768)
+
+X25519MLKEM768
+server / client                openssl                  go               pyssl
+openssl                             OK                  OK                  OK
+go                                  OK                  OK                  OK
+pyssl                               OK                  OK                  OK
+
+SecP256r1MLKEM768
+server / client                openssl                  go               pyssl
+openssl                             OK                 n/s                FAIL
+go                                 n/s                 n/s                 n/s
+pyssl                             FAIL                 n/s  OK(X25519MLKEM768)
+
+SecP384r1MLKEM1024
+server / client                openssl                  go               pyssl
+openssl                             OK                 n/s                FAIL
+go                                 n/s                 n/s                 n/s
+pyssl                             FAIL                 n/s  OK(X25519MLKEM768)
+
+MLKEM768
+server / client                openssl                  go               pyssl
+openssl                             OK                 n/s                FAIL
+go                                 n/s                 n/s                 n/s
+pyssl                             FAIL                 n/s  OK(X25519MLKEM768)

@@ -1,0 +1,192 @@
+{
+  "module": "mock",
+  "manufacturer": "PQM Labs (mock)",
+  "description": "Mock PKCS#11 3.2 token",
+  "library_version": "3.2",
+  "cryptoki_version": "3.2",
+  "token_label": "mock-pq",
+  "firmware_version": "1.0",
+  "mechanisms": [
+    {
+      "value": 15,
+      "name": "CKM_ML_KEM_KEY_PAIR_GEN",
+      "flags": [
+        "CKF_GENERATE_KEY_PAIR"
+      ],
+      "min_key": null,
+      "max_key": null,
+      "vendor_defined": false
+    },
+    {
+      "value": 23,
+      "name": "CKM_ML_KEM",
+      "flags": [
+        "CKF_ENCAPSULATE",
+        "CKF_DECAPSULATE"
+      ],
+      "min_key": null,
+      "max_key": null,
+      "vendor_defined": false
+    },
+    {
+      "value": 28,
+      "name": "CKM_ML_DSA_KEY_PAIR_GEN",
+      "flags": [
+        "CKF_GENERATE_KEY_PAIR"
+      ],
+      "min_key": null,
+      "max_key": null,
+      "vendor_defined": false
+    },
+    {
+      "value": 29,
+      "name": "CKM_ML_DSA",
+      "flags": [
+        "CKF_SIGN",
+        "CKF_VERIFY"
+      ],
+      "min_key": null,
+      "max_key": null,
+      "vendor_defined": false
+    },
+    {
+      "value": 38,
+      "name": "CKM_HASH_ML_DSA_SHA512",
+      "flags": [
+        "CKF_SIGN",
+        "CKF_VERIFY"
+      ],
+      "min_key": null,
+      "max_key": null,
+      "vendor_defined": false
+    },
+    {
+      "value": 45,
+      "name": "CKM_SLH_DSA_KEY_PAIR_GEN",
+      "flags": [
+        "CKF_GENERATE_KEY_PAIR"
+      ],
+      "min_key": null,
+      "max_key": null,
+      "vendor_defined": false
+    },
+    {
+      "value": 46,
+      "name": "CKM_SLH_DSA",
+      "flags": [
+        "CKF_SIGN",
+        "CKF_VERIFY"
+      ],
+      "min_key": null,
+      "max_key": null,
+      "vendor_defined": false
+    },
+    {
+      "value": 592,
+      "name": "CKM_SHA256",
+      "flags": [
+        "CKF_DIGEST"
+      ],
+      "min_key": null,
+      "max_key": null,
+      "vendor_defined": false
+    },
+    {
+      "value": 688,
+      "name": "CKM_SHA3_256",
+      "flags": [
+        "CKF_DIGEST"
+      ],
+      "min_key": null,
+      "max_key": null,
+      "vendor_defined": false
+    },
+    {
+      "value": 4160,
+      "name": "CKM_ECDSA_KEY_PAIR_GEN",
+      "flags": [
+        "CKF_GENERATE_KEY_PAIR"
+      ],
+      "min_key": null,
+      "max_key": null,
+      "vendor_defined": false
+    },
+    {
+      "value": 4161,
+      "name": "CKM_ECDSA",
+      "flags": [
+        "CKF_SIGN",
+        "CKF_VERIFY"
+      ],
+      "min_key": null,
+      "max_key": null,
+      "vendor_defined": false
+    },
+    {
+      "value": 4224,
+      "name": "CKM_AES_KEY_GEN",
+      "flags": [
+        "CKF_GENERATE"
+      ],
+      "min_key": null,
+      "max_key": null,
+      "vendor_defined": false
+    },
+    {
+      "value": 4231,
+      "name": "CKM_AES_GCM",
+      "flags": [
+        "CKF_ENCRYPT",
+        "CKF_DECRYPT"
+      ],
+      "min_key": null,
+      "max_key": null,
+      "vendor_defined": false
+    },
+    {
+      "value": 8459,
+      "name": "CKM_AES_KEY_WRAP_KWP",
+      "flags": [
+        "CKF_WRAP",
+        "CKF_UNWRAP"
+      ],
+      "min_key": null,
+      "max_key": null,
+      "vendor_defined": false
+    },
+    {
+      "value": 16426,
+      "name": "CKM_HKDF_DERIVE",
+      "flags": [
+        "CKF_DERIVE"
+      ],
+      "min_key": null,
+      "max_key": null,
+      "vendor_defined": false
+    },
+    {
+      "value": 16434,
+      "name": "CKM_HSS_KEY_PAIR_GEN",
+      "flags": [
+        "CKF_GENERATE_KEY_PAIR"
+      ],
+      "min_key": null,
+      "max_key": null,
+      "vendor_defined": false
+    },
+    {
+      "value": 16435,
+      "name": "CKM_HSS",
+      "flags": [
+        "CKF_SIGN",
+        "CKF_VERIFY"
+      ],
+      "min_key": null,
+      "max_key": null,
+      "vendor_defined": false
+    }
+  ],
+  "required_missing": {},
+  "recommended_missing": {},
+  "verdict": "READY: all required post-quantum mechanisms present with the right capabilities"
+}

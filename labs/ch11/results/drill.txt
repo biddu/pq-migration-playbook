@@ -1,0 +1,4 @@
+baseline         v3  {'X-Wing+ML-DSA-65': 50}  0.13s  
+kill X-Wing      v4  {'ML-KEM-768+ML-DSA-65': 50}  0.10s  {'victim_absent': True}
+rollback         v3  {'X-Wing+ML-DSA-65': 50}  0.12s  {'restored': True}
+telemetry events: 300, downgrades flagged: 0, drill PASSED

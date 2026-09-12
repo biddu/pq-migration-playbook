@@ -1,0 +1,48 @@
+{
+  "estate": {
+    "ECDSA P-256": 12000,
+    "RSA-3072": 800,
+    "ML-KEM-768": 6000,
+    "ML-DSA-65": 12000,
+    "ML-DSA-87": 40,
+    "SLH-DSA-128s": 4,
+    "LMS H20/W8": 6
+  },
+  "storage_expanded": {
+    "ECDSA P-256": 4236000,
+    "RSA-3072": 1874400,
+    "ML-KEM-768": 23040000,
+    "ML-DSA-65": 74880000,
+    "ML-DSA-87": 309760,
+    "SLH-DSA-128s": 1408,
+    "LMS H20/W8": 2184
+  },
+  "storage_seed": {
+    "ECDSA P-256": 4236000,
+    "RSA-3072": 1874400,
+    "ML-KEM-768": 9024000,
+    "ML-DSA-65": 26880000,
+    "ML-DSA-87": 115200,
+    "SLH-DSA-128s": 1408,
+    "LMS H20/W8": 2184
+  },
+  "throughput": {
+    "ecdsa_hsms": 1,
+    "pq_hsms": 3,
+    "ratio": 6.7
+  },
+  "backup": {
+    "backup_blob_expanded_bytes": 104343752,
+    "backup_blob_seed_bytes": 42133192,
+    "shamir_share_bytes_per_key_seed_form": 33,
+    "shamir_share_bytes_per_key_expanded_ml_dsa_65": 4033,
+    "shares": 5,
+    "threshold": 3
+  },
+  "mu": {
+    "message_bytes": 8388608,
+    "bytes_sent_to_hsm": 64,
+    "signature_bytes": 3309,
+    "verified": true
+  }
+}

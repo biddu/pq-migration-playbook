@@ -1,0 +1,19 @@
+estate: PQM Payments (Chapter 1 running example)
+
+algorithm        count   pk B  sk exp B  seed B  store expanded  store seed-form
+ECDSA P-256      12000     65        32       -       4,236,000        4,236,000
+RSA-3072           800    387      1700       -       1,874,400        1,874,400
+ML-KEM-768        6000   1184      2400      64      23,040,000        9,024,000
+ML-DSA-65        12000   1952      4032      32      74,880,000       26,880,000
+ML-DSA-87           40   2592      4896      32         309,760          115,200
+SLH-DSA-128s         4     32        64       -           1,408            1,408
+LMS H20/W8           6     56        52       -           2,184            2,184
+total            30850                              104,343,752       42,133,192
+
+object store 67,108,864 B: expanded form uses 155%, seed form 63%  (whether CKA_SEED or CKA_VALUE is stored is a firmware question)
+
+throughput: 4,000 sig/s needed; at 10,000 ECDSA/s -> 1 HSM(s); at 1,500 ML-DSA-65/s -> 3 HSM(s)  (ratio 6.7x; both rates are vendor figures to verify)
+
+backup blob: expanded 104,343,752 B, seed form 42,133,192 B; a Shamir share of a seed is 33 B per key (same as ECDSA today), of an expanded ML-DSA-65 key 4,033 B
+
+external mu: 8,388,608-byte artefact hashed on the host, 64 bytes sent to the module, 3309-byte signature back, verified against the full message: True

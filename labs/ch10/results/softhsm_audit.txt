@@ -1,0 +1,10 @@
+module      : /usr/lib/softhsm/libsofthsm2.so
+library     : SoftHSM / Implementation of PKCS11 v2.6, Cryptoki 2.40
+token       : 'pqm-lab', firmware 2.6
+mechanisms  : 70
+post-quantum: none
+required    : CKM_ML_KEM_KEY_PAIR_GEN: absent; CKM_ML_KEM: absent; CKM_ML_DSA_KEY_PAIR_GEN: absent; CKM_ML_DSA: absent; CKM_HKDF_DERIVE: absent; CKM_AES_KEY_WRAP_KWP: absent
+recommended : CKM_HASH_ML_DSA_SHA512: absent; CKM_SLH_DSA_KEY_PAIR_GEN: absent; CKM_SLH_DSA: absent; CKM_HSS_KEY_PAIR_GEN: absent; CKM_HSS: absent
+verdict     : NOT READY: 6 of 6 required mechanisms missing; Cryptoki 2.40
+
+The HSM shall implement PKCS#11 v3.2 (OASIS Standard, June 2026) and expose, under their 3.2 mechanism numbers and not vendor-defined values, at least: CKM_ML_KEM_KEY_PAIR_GEN, CKM_ML_KEM, CKM_ML_DSA_KEY_PAIR_GEN, CKM_ML_DSA, CKM_HKDF_DERIVE, CKM_AES_KEY_WRAP_KWP; with C_EncapsulateKey/C_DecapsulateKey for CKM_ML_KEM, CKA_PARAMETER_SET for ML-KEM-768/1024 and ML-DSA-65/87, and CKA_SEED import/export policy for seed-form keys. Recommended: CKM_HASH_ML_DSA_SHA512, CKM_SLH_DSA_KEY_PAIR_GEN, CKM_SLH_DSA, CKM_HSS_KEY_PAIR_GEN, CKM_HSS. The firmware containing these mechanisms shall hold, or have been submitted for, FIPS 140-3 Level 3 validation with ML-KEM and ML-DSA inside the module boundary (CMVP certificate number or submission date to be stated). Current gap on the audited module (Implementation of PKCS11 2.6, Cryptoki 2.40): CKM_ML_KEM_KEY_PAIR_GEN, CKM_ML_KEM, CKM_ML_DSA_KEY_PAIR_GEN, CKM_ML_DSA, CKM_HKDF_DERIVE, CKM_AES_KEY_WRAP_KWP.

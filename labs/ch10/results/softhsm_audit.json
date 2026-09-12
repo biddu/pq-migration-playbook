@@ -1,0 +1,854 @@
+{
+  "module": "/usr/lib/softhsm/libsofthsm2.so",
+  "manufacturer": "SoftHSM",
+  "description": "Implementation of PKCS11",
+  "library_version": "2.6",
+  "cryptoki_version": "2.40",
+  "token_label": "pqm-lab",
+  "firmware_version": "2.6",
+  "mechanisms": [
+    {
+      "value": 4224,
+      "name": "CKM_AES_KEY_GEN",
+      "flags": [
+        "CKF_GENERATE"
+      ],
+      "min_key": 16,
+      "max_key": 32,
+      "vendor_defined": false
+    },
+    {
+      "value": 4225,
+      "name": "CKM_AES_ECB",
+      "flags": [
+        "CKF_ENCRYPT",
+        "CKF_DECRYPT",
+        "CKF_DIGEST",
+        "CKF_VERIFY",
+        "CKF_GENERATE",
+        "CKF_GENERATE_KEY_PAIR",
+        "CKF_WRAP",
+        "CKF_DERIVE",
+        "CKF_ENCAPSULATE",
+        "CKF_DECAPSULATE"
+      ],
+      "min_key": 16,
+      "max_key": 32,
+      "vendor_defined": false
+    },
+    {
+      "value": 4226,
+      "name": "CKM_AES_CBC",
+      "flags": [
+        "CKF_ENCRYPT",
+        "CKF_DECRYPT",
+        "CKF_WRAP"
+      ],
+      "min_key": 16,
+      "max_key": 32,
+      "vendor_defined": false
+    },
+    {
+      "value": 4355,
+      "name": "CKM_DES3_CBC_ENCRYPT_DATA",
+      "flags": [
+        "CKF_DERIVE"
+      ],
+      "min_key": 0,
+      "max_key": 0,
+      "vendor_defined": false
+    },
+    {
+      "value": 4356,
+      "name": "CKM_AES_ECB_ENCRYPT_DATA",
+      "flags": [
+        "CKF_DERIVE"
+      ],
+      "min_key": 0,
+      "max_key": 0,
+      "vendor_defined": false
+    },
+    {
+      "value": 4357,
+      "name": "CKM_AES_CBC_ENCRYPT_DATA",
+      "flags": [
+        "CKF_DERIVE"
+      ],
+      "min_key": 0,
+      "max_key": 0,
+      "vendor_defined": false
+    },
+    {
+      "value": 4230,
+      "name": "CKM_AES_CTR",
+      "flags": [
+        "CKF_ENCRYPT",
+        "CKF_DECRYPT",
+        "CKF_DIGEST",
+        "CKF_VERIFY",
+        "CKF_GENERATE",
+        "CKF_GENERATE_KEY_PAIR",
+        "CKF_WRAP",
+        "CKF_DERIVE",
+        "CKF_ENCAPSULATE",
+        "CKF_DECAPSULATE"
+      ],
+      "min_key": 16,
+      "max_key": 32,
+      "vendor_defined": false
+    },
+    {
+      "value": 4229,
+      "name": "CKM_AES_CBC_PAD",
+      "flags": [
+        "CKF_ENCRYPT",
+        "CKF_DECRYPT",
+        "CKF_DIGEST",
+        "CKF_VERIFY",
+        "CKF_GENERATE",
+        "CKF_GENERATE_KEY_PAIR",
+        "CKF_WRAP",
+        "CKF_DERIVE",
+        "CKF_ENCAPSULATE",
+        "CKF_DECAPSULATE"
+      ],
+      "min_key": 16,
+      "max_key": 32,
+      "vendor_defined": false
+    },
+    {
+      "value": 4231,
+      "name": "CKM_AES_GCM",
+      "flags": [
+        "CKF_ENCRYPT",
+        "CKF_DECRYPT",
+        "CKF_DIGEST",
+        "CKF_VERIFY",
+        "CKF_GENERATE",
+        "CKF_GENERATE_KEY_PAIR",
+        "CKF_WRAP",
+        "CKF_DERIVE",
+        "CKF_ENCAPSULATE",
+        "CKF_DECAPSULATE"
+      ],
+      "min_key": 16,
+      "max_key": 32,
+      "vendor_defined": false
+    },
+    {
+      "value": 8457,
+      "name": "CKM_AES_KEY_WRAP",
+      "flags": [
+        "CKF_WRAP",
+        "CKF_UNWRAP"
+      ],
+      "min_key": 16,
+      "max_key": 2147483648,
+      "vendor_defined": false
+    },
+    {
+      "value": 4234,
+      "name": "CKM_AES_CMAC",
+      "flags": [
+        "CKF_SIGN",
+        "CKF_VERIFY"
+      ],
+      "min_key": 16,
+      "max_key": 32,
+      "vendor_defined": false
+    },
+    {
+      "value": 8458,
+      "name": "CKM_AES_KEY_WRAP_PAD",
+      "flags": [
+        "CKF_WRAP",
+        "CKF_UNWRAP"
+      ],
+      "min_key": 1,
+      "max_key": 2147483648,
+      "vendor_defined": false
+    },
+    {
+      "value": 4352,
+      "name": "CKM_DES_ECB_ENCRYPT_DATA",
+      "flags": [
+        "CKF_DERIVE"
+      ],
+      "min_key": 0,
+      "max_key": 0,
+      "vendor_defined": false
+    },
+    {
+      "value": 8193,
+      "name": "CKM_DH_PKCS_PARAMETER_GEN",
+      "flags": [
+        "CKF_GENERATE"
+      ],
+      "min_key": 512,
+      "max_key": 10000,
+      "vendor_defined": false
+    },
+    {
+      "value": 4353,
+      "name": "CKM_DES_CBC_ENCRYPT_DATA",
+      "flags": [
+        "CKF_DERIVE"
+      ],
+      "min_key": 0,
+      "max_key": 0,
+      "vendor_defined": false
+    },
+    {
+      "value": 8192,
+      "name": "CKM_DSA_PARAMETER_GEN",
+      "flags": [
+        "CKF_GENERATE"
+      ],
+      "min_key": 512,
+      "max_key": 1024,
+      "vendor_defined": false
+    },
+    {
+      "value": 16,
+      "name": "CKM_DSA_KEY_PAIR_GEN",
+      "flags": [
+        "CKF_GENERATE_KEY_PAIR"
+      ],
+      "min_key": 512,
+      "max_key": 1024,
+      "vendor_defined": false
+    },
+    {
+      "value": 17,
+      "name": "CKM_DSA",
+      "flags": [
+        "CKF_SIGN",
+        "CKF_VERIFY"
+      ],
+      "min_key": 512,
+      "max_key": 1024,
+      "vendor_defined": false
+    },
+    {
+      "value": 18,
+      "name": "CKM_DSA_SHA1",
+      "flags": [
+        "CKF_SIGN",
+        "CKF_VERIFY"
+      ],
+      "min_key": 512,
+      "max_key": 1024,
+      "vendor_defined": false
+    },
+    {
+      "value": 4354,
+      "name": "CKM_DES3_ECB_ENCRYPT_DATA",
+      "flags": [
+        "CKF_DERIVE"
+      ],
+      "min_key": 0,
+      "max_key": 0,
+      "vendor_defined": false
+    },
+    {
+      "value": 19,
+      "name": "CKM_DSA_SHA224",
+      "flags": [
+        "CKF_SIGN",
+        "CKF_VERIFY"
+      ],
+      "min_key": 512,
+      "max_key": 1024,
+      "vendor_defined": false
+    },
+    {
+      "value": 20,
+      "name": "CKM_DSA_SHA256",
+      "flags": [
+        "CKF_SIGN",
+        "CKF_VERIFY"
+      ],
+      "min_key": 512,
+      "max_key": 1024,
+      "vendor_defined": false
+    },
+    {
+      "value": 21,
+      "name": "CKM_DSA_SHA384",
+      "flags": [
+        "CKF_SIGN",
+        "CKF_VERIFY"
+      ],
+      "min_key": 512,
+      "max_key": 1024,
+      "vendor_defined": false
+    },
+    {
+      "value": 22,
+      "name": "CKM_DSA_SHA512",
+      "flags": [
+        "CKF_SIGN",
+        "CKF_VERIFY"
+      ],
+      "min_key": 512,
+      "max_key": 1024,
+      "vendor_defined": false
+    },
+    {
+      "value": 528,
+      "name": "CKM_MD5",
+      "flags": [
+        "CKF_DIGEST"
+      ],
+      "min_key": 0,
+      "max_key": 0,
+      "vendor_defined": false
+    },
+    {
+      "value": 529,
+      "name": "CKM_MD5_HMAC",
+      "flags": [
+        "CKF_SIGN",
+        "CKF_VERIFY"
+      ],
+      "min_key": 16,
+      "max_key": 512,
+      "vendor_defined": false
+    },
+    {
+      "value": 5,
+      "name": "CKM_MD5_RSA_PKCS",
+      "flags": [
+        "CKF_SIGN",
+        "CKF_VERIFY"
+      ],
+      "min_key": 512,
+      "max_key": 16384,
+      "vendor_defined": false
+    },
+    {
+      "value": 1,
+      "name": "CKM_RSA_PKCS",
+      "flags": [
+        "CKF_ENCRYPT",
+        "CKF_DECRYPT",
+        "CKF_SIGN",
+        "CKF_VERIFY",
+        "CKF_WRAP",
+        "CKF_UNWRAP"
+      ],
+      "min_key": 512,
+      "max_key": 16384,
+      "vendor_defined": false
+    },
+    {
+      "value": 288,
+      "name": "CKM_DES_KEY_GEN",
+      "flags": [
+        "CKF_GENERATE"
+      ],
+      "min_key": 0,
+      "max_key": 0,
+      "vendor_defined": false
+    },
+    {
+      "value": 289,
+      "name": "CKM_DES_ECB",
+      "flags": [
+        "CKF_ENCRYPT",
+        "CKF_DECRYPT",
+        "CKF_WRAP"
+      ],
+      "min_key": 0,
+      "max_key": 0,
+      "vendor_defined": false
+    },
+    {
+      "value": 290,
+      "name": "CKM_DES_CBC",
+      "flags": [
+        "CKF_ENCRYPT",
+        "CKF_DECRYPT",
+        "CKF_WRAP"
+      ],
+      "min_key": 0,
+      "max_key": 0,
+      "vendor_defined": false
+    },
+    {
+      "value": 33,
+      "name": "CKM_DH_PKCS_DERIVE",
+      "flags": [
+        "CKF_DERIVE"
+      ],
+      "min_key": 512,
+      "max_key": 10000,
+      "vendor_defined": false
+    },
+    {
+      "value": 32,
+      "name": "CKM_DH_PKCS_KEY_PAIR_GEN",
+      "flags": [
+        "CKF_GENERATE_KEY_PAIR"
+      ],
+      "min_key": 512,
+      "max_key": 10000,
+      "vendor_defined": false
+    },
+    {
+      "value": 293,
+      "name": "CKM_DES_CBC_PAD",
+      "flags": [
+        "CKF_ENCRYPT",
+        "CKF_DECRYPT",
+        "CKF_WRAP"
+      ],
+      "min_key": 0,
+      "max_key": 0,
+      "vendor_defined": false
+    },
+    {
+      "value": 0,
+      "name": "CKM_RSA_PKCS_KEY_PAIR_GEN",
+      "flags": [
+        "CKF_GENERATE_KEY_PAIR"
+      ],
+      "min_key": 512,
+      "max_key": 16384,
+      "vendor_defined": false
+    },
+    {
+      "value": 6,
+      "name": "CKM_SHA1_RSA_PKCS",
+      "flags": [
+        "CKF_SIGN",
+        "CKF_VERIFY"
+      ],
+      "min_key": 512,
+      "max_key": 16384,
+      "vendor_defined": false
+    },
+    {
+      "value": 544,
+      "name": "CKM_SHA_1",
+      "flags": [
+        "CKF_DIGEST"
+      ],
+      "min_key": 0,
+      "max_key": 0,
+      "vendor_defined": false
+    },
+    {
+      "value": 545,
+      "name": "CKM_SHA_1_HMAC",
+      "flags": [
+        "CKF_SIGN",
+        "CKF_VERIFY"
+      ],
+      "min_key": 20,
+      "max_key": 512,
+      "vendor_defined": false
+    },
+    {
+      "value": 9,
+      "name": "CKM_RSA_PKCS_OAEP",
+      "flags": [
+        "CKF_ENCRYPT",
+        "CKF_DECRYPT",
+        "CKF_WRAP",
+        "CKF_UNWRAP"
+      ],
+      "min_key": 512,
+      "max_key": 16384,
+      "vendor_defined": false
+    },
+    {
+      "value": 304,
+      "name": "CKM_DES2_KEY_GEN",
+      "flags": [
+        "CKF_GENERATE"
+      ],
+      "min_key": 0,
+      "max_key": 0,
+      "vendor_defined": false
+    },
+    {
+      "value": 305,
+      "name": "CKM_DES3_KEY_GEN",
+      "flags": [
+        "CKF_GENERATE"
+      ],
+      "min_key": 0,
+      "max_key": 0,
+      "vendor_defined": false
+    },
+    {
+      "value": 306,
+      "name": "CKM_DES3_ECB",
+      "flags": [
+        "CKF_ENCRYPT",
+        "CKF_DECRYPT",
+        "CKF_DIGEST",
+        "CKF_VERIFY",
+        "CKF_GENERATE",
+        "CKF_GENERATE_KEY_PAIR",
+        "CKF_WRAP",
+        "CKF_DERIVE",
+        "CKF_ENCAPSULATE",
+        "CKF_DECAPSULATE"
+      ],
+      "min_key": 0,
+      "max_key": 0,
+      "vendor_defined": false
+    },
+    {
+      "value": 307,
+      "name": "CKM_DES3_CBC",
+      "flags": [
+        "CKF_ENCRYPT",
+        "CKF_DECRYPT",
+        "CKF_WRAP"
+      ],
+      "min_key": 0,
+      "max_key": 0,
+      "vendor_defined": false
+    },
+    {
+      "value": 310,
+      "name": "CKM_DES3_CBC_PAD",
+      "flags": [
+        "CKF_ENCRYPT",
+        "CKF_DECRYPT",
+        "CKF_DIGEST",
+        "CKF_VERIFY",
+        "CKF_GENERATE",
+        "CKF_GENERATE_KEY_PAIR",
+        "CKF_WRAP",
+        "CKF_DERIVE",
+        "CKF_ENCAPSULATE",
+        "CKF_DECAPSULATE"
+      ],
+      "min_key": 0,
+      "max_key": 0,
+      "vendor_defined": false
+    },
+    {
+      "value": 312,
+      "name": "CKM_DES3_CMAC",
+      "flags": [
+        "CKF_SIGN",
+        "CKF_VERIFY"
+      ],
+      "min_key": 0,
+      "max_key": 0,
+      "vendor_defined": false
+    },
+    {
+      "value": 4160,
+      "name": "CKM_ECDSA_KEY_PAIR_GEN",
+      "flags": [
+        "CKF_GENERATE_KEY_PAIR"
+      ],
+      "min_key": 112,
+      "max_key": 521,
+      "vendor_defined": false
+    },
+    {
+      "value": 4161,
+      "name": "CKM_ECDSA",
+      "flags": [
+        "CKF_SIGN",
+        "CKF_VERIFY"
+      ],
+      "min_key": 112,
+      "max_key": 521,
+      "vendor_defined": false
+    },
+    {
+      "value": 13,
+      "name": "CKM_RSA_PKCS_PSS",
+      "flags": [
+        "CKF_SIGN",
+        "CKF_VERIFY"
+      ],
+      "min_key": 512,
+      "max_key": 16384,
+      "vendor_defined": false
+    },
+    {
+      "value": 64,
+      "name": "CKM_SHA256_RSA_PKCS",
+      "flags": [
+        "CKF_SIGN",
+        "CKF_VERIFY"
+      ],
+      "min_key": 512,
+      "max_key": 16384,
+      "vendor_defined": false
+    },
+    {
+      "value": 67,
+      "name": "CKM_SHA256_RSA_PKCS_PSS",
+      "flags": [
+        "CKF_SIGN",
+        "CKF_VERIFY"
+      ],
+      "min_key": 512,
+      "max_key": 16384,
+      "vendor_defined": false
+    },
+    {
+      "value": 65,
+      "name": "CKM_SHA384_RSA_PKCS",
+      "flags": [
+        "CKF_SIGN",
+        "CKF_VERIFY"
+      ],
+      "min_key": 512,
+      "max_key": 16384,
+      "vendor_defined": false
+    },
+    {
+      "value": 70,
+      "name": "CKM_SHA224_RSA_PKCS",
+      "flags": [
+        "CKF_SIGN",
+        "CKF_VERIFY"
+      ],
+      "min_key": 512,
+      "max_key": 16384,
+      "vendor_defined": false
+    },
+    {
+      "value": 14,
+      "name": "CKM_SHA1_RSA_PKCS_PSS",
+      "flags": [
+        "CKF_SIGN",
+        "CKF_VERIFY"
+      ],
+      "min_key": 512,
+      "max_key": 16384,
+      "vendor_defined": false
+    },
+    {
+      "value": 71,
+      "name": "CKM_SHA224_RSA_PKCS_PSS",
+      "flags": [
+        "CKF_SIGN",
+        "CKF_VERIFY"
+      ],
+      "min_key": 512,
+      "max_key": 16384,
+      "vendor_defined": false
+    },
+    {
+      "value": 68,
+      "name": "CKM_SHA384_RSA_PKCS_PSS",
+      "flags": [
+        "CKF_SIGN",
+        "CKF_VERIFY"
+      ],
+      "min_key": 512,
+      "max_key": 16384,
+      "vendor_defined": false
+    },
+    {
+      "value": 66,
+      "name": "CKM_SHA512_RSA_PKCS",
+      "flags": [
+        "CKF_SIGN",
+        "CKF_VERIFY"
+      ],
+      "min_key": 512,
+      "max_key": 16384,
+      "vendor_defined": false
+    },
+    {
+      "value": 69,
+      "name": "CKM_SHA512_RSA_PKCS_PSS",
+      "flags": [
+        "CKF_SIGN",
+        "CKF_VERIFY"
+      ],
+      "min_key": 512,
+      "max_key": 16384,
+      "vendor_defined": false
+    },
+    {
+      "value": 4176,
+      "name": "CKM_ECDH1_DERIVE",
+      "flags": [
+        "CKF_DERIVE"
+      ],
+      "min_key": 112,
+      "max_key": 521,
+      "vendor_defined": false
+    },
+    {
+      "value": 848,
+      "name": "CKM_GENERIC_SECRET_KEY_GEN",
+      "flags": [
+        "CKF_GENERATE"
+      ],
+      "min_key": 1,
+      "max_key": 2147483648,
+      "vendor_defined": false
+    },
+    {
+      "value": 3,
+      "name": "CKM_RSA_X_509",
+      "flags": [
+        "CKF_ENCRYPT",
+        "CKF_DECRYPT",
+        "CKF_SIGN",
+        "CKF_VERIFY"
+      ],
+      "min_key": 512,
+      "max_key": 16384,
+      "vendor_defined": false
+    },
+    {
+      "value": 592,
+      "name": "CKM_SHA256",
+      "flags": [
+        "CKF_DIGEST"
+      ],
+      "min_key": 0,
+      "max_key": 0,
+      "vendor_defined": false
+    },
+    {
+      "value": 593,
+      "name": "CKM_SHA256_HMAC",
+      "flags": [
+        "CKF_SIGN",
+        "CKF_VERIFY"
+      ],
+      "min_key": 32,
+      "max_key": 512,
+      "vendor_defined": false
+    },
+    {
+      "value": 4181,
+      "name": "CKM_EC_EDWARDS_KEY_PAIR_GEN",
+      "flags": [
+        "CKF_GENERATE_KEY_PAIR"
+      ],
+      "min_key": 256,
+      "max_key": 456,
+      "vendor_defined": false
+    },
+    {
+      "value": 597,
+      "name": "CKM_SHA224",
+      "flags": [
+        "CKF_DIGEST"
+      ],
+      "min_key": 0,
+      "max_key": 0,
+      "vendor_defined": false
+    },
+    {
+      "value": 4183,
+      "name": "CKM_EDDSA",
+      "flags": [
+        "CKF_SIGN",
+        "CKF_VERIFY"
+      ],
+      "min_key": 256,
+      "max_key": 456,
+      "vendor_defined": false
+    },
+    {
+      "value": 598,
+      "name": "CKM_SHA224_HMAC",
+      "flags": [
+        "CKF_SIGN",
+        "CKF_VERIFY"
+      ],
+      "min_key": 28,
+      "max_key": 512,
+      "vendor_defined": false
+    },
+    {
+      "value": 608,
+      "name": "CKM_SHA384",
+      "flags": [
+        "CKF_DIGEST"
+      ],
+      "min_key": 0,
+      "max_key": 0,
+      "vendor_defined": false
+    },
+    {
+      "value": 609,
+      "name": "CKM_SHA384_HMAC",
+      "flags": [
+        "CKF_SIGN",
+        "CKF_VERIFY"
+      ],
+      "min_key": 48,
+      "max_key": 512,
+      "vendor_defined": false
+    },
+    {
+      "value": 624,
+      "name": "CKM_SHA512",
+      "flags": [
+        "CKF_DIGEST"
+      ],
+      "min_key": 0,
+      "max_key": 0,
+      "vendor_defined": false
+    },
+    {
+      "value": 625,
+      "name": "CKM_SHA512_HMAC",
+      "flags": [
+        "CKF_SIGN",
+        "CKF_VERIFY"
+      ],
+      "min_key": 64,
+      "max_key": 512,
+      "vendor_defined": false
+    }
+  ],
+  "required_missing": {
+    "CKM_ML_KEM_KEY_PAIR_GEN": [
+      "absent"
+    ],
+    "CKM_ML_KEM": [
+      "absent"
+    ],
+    "CKM_ML_DSA_KEY_PAIR_GEN": [
+      "absent"
+    ],
+    "CKM_ML_DSA": [
+      "absent"
+    ],
+    "CKM_HKDF_DERIVE": [
+      "absent"
+    ],
+    "CKM_AES_KEY_WRAP_KWP": [
+      "absent"
+    ]
+  },
+  "recommended_missing": {
+    "CKM_HASH_ML_DSA_SHA512": [
+      "absent"
+    ],
+    "CKM_SLH_DSA_KEY_PAIR_GEN": [
+      "absent"
+    ],
+    "CKM_SLH_DSA": [
+      "absent"
+    ],
+    "CKM_HSS_KEY_PAIR_GEN": [
+      "absent"
+    ],
+    "CKM_HSS": [
+      "absent"
+    ]
+  },
+  "verdict": "NOT READY: 6 of 6 required mechanisms missing; Cryptoki 2.40"
+}
